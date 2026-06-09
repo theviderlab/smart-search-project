@@ -1,0 +1,552 @@
+{
+  "account": "Travel Demo",
+  "query": "viajes a brasil",
+  "recordedAt": "2026-06-09T17:15:37.624909+00:00",
+  "events": [
+    {
+      "tOffsetMs": 0,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-account",
+        "ts": "2026-06-09T17:15:28.133174+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 1,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-account",
+        "ts": "2026-06-09T17:15:28.133174+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 5,
+      "event": {
+        "event": "stage_start",
+        "stage": "enhance-query",
+        "ts": "2026-06-09T17:15:28.133174+00:00",
+        "data": {
+          "query": "viajes a brasil"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 723,
+      "event": {
+        "event": "stage_end",
+        "stage": "enhance-query",
+        "ts": "2026-06-09T17:15:28.854416+00:00",
+        "data": {
+          "processed_query": "trips to Brazil"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 724,
+      "event": {
+        "event": "stage_start",
+        "stage": "extract-filters",
+        "ts": "2026-06-09T17:15:28.854416+00:00",
+        "data": {
+          "query": "viajes a brasil"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 3428,
+      "event": {
+        "event": "stage_end",
+        "stage": "extract-filters",
+        "ts": "2026-06-09T17:15:31.437959+00:00",
+        "data": {
+          "processor_filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": null
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 3430,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-namespace",
+        "ts": "2026-06-09T17:15:31.437959+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 3430,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-namespace",
+        "ts": "2026-06-09T17:15:31.478800+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 3431,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-tax-namespace",
+        "ts": "2026-06-09T17:15:31.478800+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 3432,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-tax-namespace",
+        "ts": "2026-06-09T17:15:31.560979+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 3434,
+      "event": {
+        "event": "stage_start",
+        "stage": "pinecone-content",
+        "ts": "2026-06-09T17:15:31.560979+00:00",
+        "data": {
+          "query": "trips to Brazil",
+          "k": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 3434,
+      "event": {
+        "event": "stage_start",
+        "stage": "pinecone-taxonomy",
+        "ts": "2026-06-09T17:15:31.561979+00:00",
+        "data": {
+          "query": "trips to Brazil",
+          "k": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 5515,
+      "event": {
+        "event": "stage_end",
+        "stage": "pinecone-taxonomy",
+        "ts": "2026-06-09T17:15:33.648496+00:00",
+        "data": {
+          "hits": 10,
+          "top_matches": [
+            {
+              "match": "Brazil, situated in South America, is a diverse and vibrant country known for it",
+              "score": 0.562
+            },
+            {
+              "match": "Brazil is a country in South America known for its vast Amazon rainforest, diver",
+              "score": 0.5386
+            },
+            {
+              "match": "Brazil is a country with a rich cultural identity and historical heritage. It is",
+              "score": 0.487
+            },
+            {
+              "match": "Rio de Janeiro is a vibrant city in Brazil known for its stunning beaches, lush ",
+              "score": 0.4623
+            },
+            {
+              "match": "Rio de Janeiro is a vibrant city known for its lively atmosphere, beautiful beac",
+              "score": 0.4468
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6017,
+      "event": {
+        "event": "stage_end",
+        "stage": "pinecone-content",
+        "ts": "2026-06-09T17:15:33.686682+00:00",
+        "data": {
+          "hits": 10,
+          "top_matches": [
+            {
+              "match": "The \"Tres Destinos Top\" tour package includes a 9-day trip to Rio de Janeiro, Ig",
+              "score": 0.6047
+            },
+            {
+              "match": "This itinerary is a 9-day trip to three top destinations in South America: Rio d",
+              "score": 0.5753
+            },
+            {
+              "match": "The main purpose of the \"Tres Destinos Top\" tour package is a combination of cul",
+              "score": 0.5647
+            },
+            {
+              "match": "The tour package \"Tres Destinos Top\" includes visits to three popular destinatio",
+              "score": 0.5603
+            },
+            {
+              "match": "This trip itinerary is for an 8-day journey to Argentina and Uruguay. It include",
+              "score": 0.4695
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6019,
+      "event": {
+        "event": "stage_start",
+        "stage": "process-direct",
+        "ts": "2026-06-09T17:15:33.688122+00:00",
+        "data": {
+          "hits": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6020,
+      "event": {
+        "event": "stage_end",
+        "stage": "process-direct",
+        "ts": "2026-06-09T17:15:33.688122+00:00",
+        "data": {
+          "unique_page_ids": 3
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6021,
+      "event": {
+        "event": "stage_start",
+        "stage": "expand-tax-hits",
+        "ts": "2026-06-09T17:15:33.688122+00:00",
+        "data": {
+          "tax_hits": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6022,
+      "event": {
+        "event": "stage_end",
+        "stage": "expand-tax-hits",
+        "ts": "2026-06-09T17:15:34.149592+00:00",
+        "data": {
+          "expanded_page_ids": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6022,
+      "event": {
+        "event": "stage_start",
+        "stage": "merge-results",
+        "ts": "2026-06-09T17:15:34.149592+00:00",
+        "data": {
+          "direct": 3,
+          "taxonomy": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6023,
+      "event": {
+        "event": "stage_end",
+        "stage": "merge-results",
+        "ts": "2026-06-09T17:15:34.149592+00:00",
+        "data": {
+          "merged_page_ids": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6023,
+      "event": {
+        "event": "stage_start",
+        "stage": "extract-tax-filters",
+        "ts": "2026-06-09T17:15:34.149592+00:00",
+        "data": {
+          "query": "viajes a brasil",
+          "page_ids": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 8308,
+      "event": {
+        "event": "stage_end",
+        "stage": "extract-tax-filters",
+        "ts": "2026-06-09T17:15:36.439811+00:00",
+        "data": {
+          "criteria": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [
+                "brazil"
+              ],
+              "exclude": []
+            },
+            "regions": {
+              "include": [
+                "south america"
+              ],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 8310,
+      "event": {
+        "event": "stage_start",
+        "stage": "filter-by-tax",
+        "ts": "2026-06-09T17:15:36.439811+00:00",
+        "data": {
+          "page_ids": 4,
+          "criteria": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [
+                "brazil"
+              ],
+              "exclude": []
+            },
+            "regions": {
+              "include": [
+                "south america"
+              ],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 8363,
+      "event": {
+        "event": "stage_end",
+        "stage": "filter-by-tax",
+        "ts": "2026-06-09T17:15:36.496193+00:00",
+        "data": {
+          "surviving_page_ids": 1,
+          "dropped": 3
+        }
+      }
+    },
+    {
+      "tOffsetMs": 8364,
+      "event": {
+        "event": "stage_start",
+        "stage": "apply-param-filters",
+        "ts": "2026-06-09T17:15:36.496193+00:00",
+        "data": {
+          "page_ids": 1,
+          "filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": null
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 8367,
+      "event": {
+        "event": "stage_end",
+        "stage": "apply-param-filters",
+        "ts": "2026-06-09T17:15:36.499384+00:00",
+        "data": {
+          "surviving_page_ids": 1,
+          "dropped": 0
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9390,
+      "event": {
+        "event": "stage_start",
+        "stage": "fetch-details",
+        "ts": "2026-06-09T17:15:37.522639+00:00",
+        "data": {
+          "page_ids": 1
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9481,
+      "event": {
+        "event": "stage_end",
+        "stage": "fetch-details",
+        "ts": "2026-06-09T17:15:37.613569+00:00",
+        "data": {
+          "enriched_results": 1,
+          "warnings": 0
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9481,
+      "event": {
+        "event": "stage_start",
+        "stage": "rank-format",
+        "ts": "2026-06-09T17:15:37.614532+00:00",
+        "data": {
+          "results": 1
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9483,
+      "event": {
+        "event": "stage_end",
+        "stage": "rank-format",
+        "ts": "2026-06-09T17:15:37.615513+00:00",
+        "data": {
+          "top_score": 0.57624456275,
+          "ranked": [
+            {
+              "title": "Tres Destinos Top",
+              "score": 0.5762
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9484,
+      "event": {
+        "event": "result",
+        "ts": "2026-06-09T17:15:37.616196+00:00",
+        "data": {
+          "status": "success",
+          "query": "viajes a brasil",
+          "results": [
+            {
+              "id": "3383",
+              "title": "Tres Destinos Top",
+              "content": "This itinerary is a 9-day trip to three top destinations in South America: Rio de Janeiro, Iguazú, and Buenos Aires. It includes flights between cities, airport transfers, accommodation with breakfast, guided tours in Rio de Janeiro and Buenos Aires, visits to both the Argentine and Brazilian sides of the Iguazú Falls, and travel insurance. The main activities include exploring Rio de Janeiro's landmarks, visiting the Iguazú National Park, and taking a city tour in Buenos Aires. The trip ends with a return flight to Mexico City.",
+              "score": 0.57624456275,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "iguazú",
+                    "rio de janeiro"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina",
+                    "brazil"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            }
+          ],
+          "processed_query": "trips to Brazil",
+          "processor_filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": null
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          },
+          "taxonomy_filters": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [
+                "brazil"
+              ],
+              "exclude": []
+            },
+            "regions": {
+              "include": [
+                "south america"
+              ],
+              "exclude": []
+            }
+          },
+          "warnings": null,
+          "errors": null
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9490,
+      "event": {
+        "event": "done",
+        "ts": "2026-06-09T17:15:37.617383+00:00"
+      }
+    }
+  ]
+}

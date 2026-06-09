@@ -1,0 +1,638 @@
+{
+  "account": "Travel Demo",
+  "query": "playa hasta 3000 dolares",
+  "recordedAt": "2026-06-09T17:15:20.622744+00:00",
+  "events": [
+    {
+      "tOffsetMs": 0,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-account",
+        "ts": "2026-06-09T17:15:09.326040+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 1,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-account",
+        "ts": "2026-06-09T17:15:09.326040+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 5,
+      "event": {
+        "event": "stage_start",
+        "stage": "enhance-query",
+        "ts": "2026-06-09T17:15:09.326040+00:00",
+        "data": {
+          "query": "playa hasta 3000 dolares"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 687,
+      "event": {
+        "event": "stage_end",
+        "stage": "enhance-query",
+        "ts": "2026-06-09T17:15:10.011308+00:00",
+        "data": {
+          "processed_query": "beach vacation up to 3000 dollars"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 690,
+      "event": {
+        "event": "stage_start",
+        "stage": "extract-filters",
+        "ts": "2026-06-09T17:15:10.011308+00:00",
+        "data": {
+          "query": "playa hasta 3000 dolares"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 3674,
+      "event": {
+        "event": "stage_end",
+        "stage": "extract-filters",
+        "ts": "2026-06-09T17:15:12.870345+00:00",
+        "data": {
+          "processor_filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": 3000.0
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 3676,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-namespace",
+        "ts": "2026-06-09T17:15:12.870345+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 3677,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-namespace",
+        "ts": "2026-06-09T17:15:12.918459+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 3679,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-tax-namespace",
+        "ts": "2026-06-09T17:15:12.918459+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 3687,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-tax-namespace",
+        "ts": "2026-06-09T17:15:13.000754+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 3688,
+      "event": {
+        "event": "stage_start",
+        "stage": "pinecone-content",
+        "ts": "2026-06-09T17:15:13.000754+00:00",
+        "data": {
+          "query": "beach vacation up to 3000 dollars",
+          "k": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 3689,
+      "event": {
+        "event": "stage_start",
+        "stage": "pinecone-taxonomy",
+        "ts": "2026-06-09T17:15:13.000754+00:00",
+        "data": {
+          "query": "beach vacation up to 3000 dollars",
+          "k": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6238,
+      "event": {
+        "event": "stage_end",
+        "stage": "pinecone-content",
+        "ts": "2026-06-09T17:15:15.560757+00:00",
+        "data": {
+          "hits": 10,
+          "top_matches": [
+            {
+              "match": "The \"Tres Destinos Top\" tour package includes a 9-day trip to Rio de Janeiro, Ig",
+              "score": 0.3082
+            },
+            {
+              "match": "The main purpose of the \"Tres Destinos Top\" tour package is a combination of cul",
+              "score": 0.2776
+            },
+            {
+              "match": "The tour package \"Tres Destinos Top\" includes visits to three popular destinatio",
+              "score": 0.2614
+            },
+            {
+              "match": "The \"Patagonia Infinita: Buenos Aires y Calafate\" tour package includes round-tr",
+              "score": 0.2595
+            },
+            {
+              "match": "This itinerary is a 9-day trip to three top destinations in South America: Rio d",
+              "score": 0.2522
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6762,
+      "event": {
+        "event": "stage_end",
+        "stage": "pinecone-taxonomy",
+        "ts": "2026-06-09T17:15:15.653604+00:00",
+        "data": {
+          "hits": 10,
+          "top_matches": [
+            {
+              "match": "Uruguay, a country nestled in South America, boasts a diverse geography characte",
+              "score": 0.2613
+            },
+            {
+              "match": "Uruguay is a South American country known for its beautiful beaches, vibrant cul",
+              "score": 0.2453
+            },
+            {
+              "match": "Rio de Janeiro is a vibrant city in Brazil known for its stunning beaches, lush ",
+              "score": 0.2397
+            },
+            {
+              "match": "Rio de Janeiro is a vibrant city known for its lively atmosphere, beautiful beac",
+              "score": 0.2177
+            },
+            {
+              "match": "Viña del Mar is a coastal city known for its lively atmosphere and beautiful bea",
+              "score": 0.2152
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6768,
+      "event": {
+        "event": "stage_start",
+        "stage": "process-direct",
+        "ts": "2026-06-09T17:15:15.653604+00:00",
+        "data": {
+          "hits": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6769,
+      "event": {
+        "event": "stage_end",
+        "stage": "process-direct",
+        "ts": "2026-06-09T17:15:15.653604+00:00",
+        "data": {
+          "unique_page_ids": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6770,
+      "event": {
+        "event": "stage_start",
+        "stage": "expand-tax-hits",
+        "ts": "2026-06-09T17:15:15.653604+00:00",
+        "data": {
+          "tax_hits": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6771,
+      "event": {
+        "event": "stage_end",
+        "stage": "expand-tax-hits",
+        "ts": "2026-06-09T17:15:16.089135+00:00",
+        "data": {
+          "expanded_page_ids": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6772,
+      "event": {
+        "event": "stage_start",
+        "stage": "merge-results",
+        "ts": "2026-06-09T17:15:16.089135+00:00",
+        "data": {
+          "direct": 4,
+          "taxonomy": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6772,
+      "event": {
+        "event": "stage_end",
+        "stage": "merge-results",
+        "ts": "2026-06-09T17:15:16.089135+00:00",
+        "data": {
+          "merged_page_ids": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6774,
+      "event": {
+        "event": "stage_start",
+        "stage": "extract-tax-filters",
+        "ts": "2026-06-09T17:15:16.089135+00:00",
+        "data": {
+          "query": "playa hasta 3000 dolares",
+          "page_ids": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9743,
+      "event": {
+        "event": "stage_end",
+        "stage": "extract-tax-filters",
+        "ts": "2026-06-09T17:15:19.069503+00:00",
+        "data": {
+          "criteria": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [],
+              "exclude": []
+            },
+            "regions": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9747,
+      "event": {
+        "event": "stage_start",
+        "stage": "filter-by-tax",
+        "ts": "2026-06-09T17:15:19.069503+00:00",
+        "data": {
+          "page_ids": 4,
+          "criteria": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [],
+              "exclude": []
+            },
+            "regions": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9754,
+      "event": {
+        "event": "stage_end",
+        "stage": "filter-by-tax",
+        "ts": "2026-06-09T17:15:19.077918+00:00",
+        "data": {
+          "surviving_page_ids": 4,
+          "dropped": 0
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9759,
+      "event": {
+        "event": "stage_start",
+        "stage": "apply-param-filters",
+        "ts": "2026-06-09T17:15:19.077918+00:00",
+        "data": {
+          "page_ids": 4,
+          "filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": 3000.0
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9919,
+      "event": {
+        "event": "stage_end",
+        "stage": "apply-param-filters",
+        "ts": "2026-06-09T17:15:19.242905+00:00",
+        "data": {
+          "surviving_page_ids": 4,
+          "dropped": 0
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10919,
+      "event": {
+        "event": "stage_start",
+        "stage": "fetch-details",
+        "ts": "2026-06-09T17:15:20.246958+00:00",
+        "data": {
+          "page_ids": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 11279,
+      "event": {
+        "event": "stage_end",
+        "stage": "fetch-details",
+        "ts": "2026-06-09T17:15:20.605715+00:00",
+        "data": {
+          "enriched_results": 4,
+          "warnings": 0
+        }
+      }
+    },
+    {
+      "tOffsetMs": 11280,
+      "event": {
+        "event": "stage_start",
+        "stage": "rank-format",
+        "ts": "2026-06-09T17:15:20.605715+00:00",
+        "data": {
+          "results": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 11283,
+      "event": {
+        "event": "stage_end",
+        "stage": "rank-format",
+        "ts": "2026-06-09T17:15:20.605715+00:00",
+        "data": {
+          "top_score": 0.2748696355,
+          "ranked": [
+            {
+              "title": "Tres Destinos Top",
+              "score": 0.2749
+            },
+            {
+              "title": "Dos Paises Por Uno Argentina y Uruguay",
+              "score": 0.2613
+            },
+            {
+              "title": "Patagonia Infinita Buenos Aires y Calafate",
+              "score": 0.2403
+            },
+            {
+              "title": "Buenos Aires y Santiago",
+              "score": 0.2367
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 11284,
+      "event": {
+        "event": "result",
+        "ts": "2026-06-09T17:15:20.605715+00:00",
+        "data": {
+          "status": "success",
+          "query": "playa hasta 3000 dolares",
+          "results": [
+            {
+              "id": "3383",
+              "title": "Tres Destinos Top",
+              "content": "This itinerary is a 9-day trip to three top destinations in South America: Rio de Janeiro, Iguazú, and Buenos Aires. It includes flights between cities, airport transfers, accommodation with breakfast, guided tours in Rio de Janeiro and Buenos Aires, visits to both the Argentine and Brazilian sides of the Iguazú Falls, and travel insurance. The main activities include exploring Rio de Janeiro's landmarks, visiting the Iguazú National Park, and taking a city tour in Buenos Aires. The trip ends with a return flight to Mexico City.",
+              "score": 0.2748696355,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "iguazú",
+                    "rio de janeiro"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina",
+                    "brazil"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3382",
+              "title": "Dos Paises Por Uno Argentina y Uruguay",
+              "content": "This trip itinerary is for an 8-day journey to Argentina and Uruguay. It includes flights from Mexico City to Buenos Aires, transfers, accommodation, city tours in Buenos Aires and Montevideo, a tango show dinner, excursions to Punta del Este and Colonia del Sacramento, and travel insurance. The itinerary covers sightseeing, historical sites, cultural experiences, and natural landscapes in both countries. The trip concludes with a flight back to Mexico City.",
+              "score": 0.261338323,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "colonia del sacramento",
+                    "montevideo"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina",
+                    "uruguay"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3381",
+              "title": "Patagonia Infinita Buenos Aires y Calafate",
+              "content": "This itinerary is for a trip called \"Patagonia Infinita: Buenos Aires y Calafate\" lasting 8 days and 6 nights. It includes flights from Mexico to Buenos Aires and Calafate, airport transfers, accommodation with breakfast, a city tour in Buenos Aires, an excursion to Perito Moreno Glacier, and travel insurance. \n\nDay 1: Flight from Mexico to Buenos Aires.\nDay 2: Arrival in Buenos Aires, hotel check-in.\nDay 3: City tour in Buenos Aires.\nDay 4: Free day in Buenos Aires.\nDay 5: Flight to Calafate, hotel transfer.\nDay 6: Excursion to Perito Moreno Glacier.\nDay 7: Flight back to Buenos Aires.\nDay 8: Flight from Buenos Aires back to Mexico.",
+              "score": 0.24032323066666664,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "calafate"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3380",
+              "title": "Buenos Aires y Santiago",
+              "content": "This itinerary includes:\n- Flights from Mexico to Buenos Aires to Santiago and back\n- Airport transfers\n- 3 nights accommodation in Buenos Aires with breakfast\n- Panoramic city tour of Buenos Aires\n- Free time in Buenos Aires\n- 3 nights accommodation in Santiago with breakfast\n- City tour of Santiago\n- Excursion to Viña del Mar and Valparaíso\n- Travel insurance\n- 1 checked suitcase of 23 kg\n\nItinerary:\nDay 1: Departure from Mexico to Buenos Aires\nDay 2: Arrival in Buenos Aires\nDay 3: Buenos Aires city tour\nDay 4: Free day in Buenos Aires\nDay 5: Travel from Buenos Aires to Santiago\nDay 6: Santiago city tour\nDay 7: Excursion to Viña del Mar and Valparaíso\nDay 8: Return from Santiago to Mexico",
+              "score": 0.2367017045,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "santiago",
+                    "valparaíso",
+                    "viña del mar"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina",
+                    "chile"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            }
+          ],
+          "processed_query": "beach vacation up to 3000 dollars",
+          "processor_filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": 3000.0
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          },
+          "taxonomy_filters": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [],
+              "exclude": []
+            },
+            "regions": {
+              "include": [],
+              "exclude": []
+            }
+          },
+          "warnings": null,
+          "errors": null
+        }
+      }
+    },
+    {
+      "tOffsetMs": 11293,
+      "event": {
+        "event": "done",
+        "ts": "2026-06-09T17:15:20.610354+00:00"
+      }
+    }
+  ]
+}

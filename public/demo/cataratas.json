@@ -1,0 +1,558 @@
+{
+  "account": "Travel Demo",
+  "query": "cataratas en brasil hasta 5000 dolares",
+  "recordedAt": "2026-06-09T17:16:37.622521+00:00",
+  "events": [
+    {
+      "tOffsetMs": 0,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-account",
+        "ts": "2026-06-09T17:16:19.750519+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 2,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-account",
+        "ts": "2026-06-09T17:16:19.750519+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 6,
+      "event": {
+        "event": "stage_start",
+        "stage": "enhance-query",
+        "ts": "2026-06-09T17:16:19.750519+00:00",
+        "data": {
+          "query": "cataratas en brasil hasta 5000 dolares"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 5216,
+      "event": {
+        "event": "stage_end",
+        "stage": "enhance-query",
+        "ts": "2026-06-09T17:16:24.966467+00:00",
+        "data": {
+          "processed_query": "waterfalls in Brazil"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 5218,
+      "event": {
+        "event": "stage_start",
+        "stage": "extract-filters",
+        "ts": "2026-06-09T17:16:24.966467+00:00",
+        "data": {
+          "query": "cataratas en brasil hasta 5000 dolares"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 8280,
+      "event": {
+        "event": "stage_end",
+        "stage": "extract-filters",
+        "ts": "2026-06-09T17:16:27.898677+00:00",
+        "data": {
+          "processor_filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": 5000.0
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 8282,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-namespace",
+        "ts": "2026-06-09T17:16:27.898677+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 8282,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-namespace",
+        "ts": "2026-06-09T17:16:27.940131+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 8283,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-tax-namespace",
+        "ts": "2026-06-09T17:16:27.940131+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 8285,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-tax-namespace",
+        "ts": "2026-06-09T17:16:28.029763+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 8286,
+      "event": {
+        "event": "stage_start",
+        "stage": "pinecone-content",
+        "ts": "2026-06-09T17:16:28.029763+00:00",
+        "data": {
+          "query": "waterfalls in Brazil",
+          "k": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 8286,
+      "event": {
+        "event": "stage_start",
+        "stage": "pinecone-taxonomy",
+        "ts": "2026-06-09T17:16:28.029763+00:00",
+        "data": {
+          "query": "waterfalls in Brazil",
+          "k": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10217,
+      "event": {
+        "event": "stage_end",
+        "stage": "pinecone-taxonomy",
+        "ts": "2026-06-09T17:16:29.967176+00:00",
+        "data": {
+          "hits": 10,
+          "top_matches": [
+            {
+              "match": "Brazil is a country in South America known for its vast Amazon rainforest, diver",
+              "score": 0.5782
+            },
+            {
+              "match": "Brazil, situated in South America, is a diverse and vibrant country known for it",
+              "score": 0.5632
+            },
+            {
+              "match": "Rio de Janeiro is a vibrant city in Brazil known for its stunning beaches, lush ",
+              "score": 0.4705
+            },
+            {
+              "match": "Iguazú is a city known for its stunning natural beauty and the famous Iguazú Fal",
+              "score": 0.4621
+            },
+            {
+              "match": "Brazil is a country with a rich cultural identity and historical heritage. It is",
+              "score": 0.4465
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10665,
+      "event": {
+        "event": "stage_end",
+        "stage": "pinecone-content",
+        "ts": "2026-06-09T17:16:29.992387+00:00",
+        "data": {
+          "hits": 10,
+          "top_matches": [
+            {
+              "match": "The main purpose of the \"Tres Destinos Top\" tour package is a combination of cul",
+              "score": 0.4279
+            },
+            {
+              "match": "This itinerary is a 9-day trip to three top destinations in South America: Rio d",
+              "score": 0.399
+            },
+            {
+              "match": "The \"Tres Destinos Top\" tour package includes a 9-day trip to Rio de Janeiro, Ig",
+              "score": 0.3836
+            },
+            {
+              "match": "The tour package \"Tres Destinos Top\" includes visits to three popular destinatio",
+              "score": 0.3703
+            },
+            {
+              "match": "The main purpose of the tour package \"Dos países por uno: Argentina y Uruguay\" i",
+              "score": 0.2747
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10666,
+      "event": {
+        "event": "stage_start",
+        "stage": "process-direct",
+        "ts": "2026-06-09T17:16:29.993508+00:00",
+        "data": {
+          "hits": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10667,
+      "event": {
+        "event": "stage_end",
+        "stage": "process-direct",
+        "ts": "2026-06-09T17:16:29.993508+00:00",
+        "data": {
+          "unique_page_ids": 3
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10668,
+      "event": {
+        "event": "stage_start",
+        "stage": "expand-tax-hits",
+        "ts": "2026-06-09T17:16:29.993508+00:00",
+        "data": {
+          "tax_hits": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10668,
+      "event": {
+        "event": "stage_end",
+        "stage": "expand-tax-hits",
+        "ts": "2026-06-09T17:16:30.411970+00:00",
+        "data": {
+          "expanded_page_ids": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10669,
+      "event": {
+        "event": "stage_start",
+        "stage": "merge-results",
+        "ts": "2026-06-09T17:16:30.415426+00:00",
+        "data": {
+          "direct": 3,
+          "taxonomy": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10669,
+      "event": {
+        "event": "stage_end",
+        "stage": "merge-results",
+        "ts": "2026-06-09T17:16:30.415426+00:00",
+        "data": {
+          "merged_page_ids": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10669,
+      "event": {
+        "event": "stage_start",
+        "stage": "extract-tax-filters",
+        "ts": "2026-06-09T17:16:30.415426+00:00",
+        "data": {
+          "query": "cataratas en brasil hasta 5000 dolares",
+          "page_ids": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 16584,
+      "event": {
+        "event": "stage_end",
+        "stage": "extract-tax-filters",
+        "ts": "2026-06-09T17:16:36.330791+00:00",
+        "data": {
+          "criteria": {
+            "cities": {
+              "include": [
+                "rio de janeiro"
+              ],
+              "exclude": []
+            },
+            "countries": {
+              "include": [
+                "brazil"
+              ],
+              "exclude": []
+            },
+            "regions": {
+              "include": [
+                "south america"
+              ],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 16584,
+      "event": {
+        "event": "stage_start",
+        "stage": "filter-by-tax",
+        "ts": "2026-06-09T17:16:36.330791+00:00",
+        "data": {
+          "page_ids": 4,
+          "criteria": {
+            "cities": {
+              "include": [
+                "rio de janeiro"
+              ],
+              "exclude": []
+            },
+            "countries": {
+              "include": [
+                "brazil"
+              ],
+              "exclude": []
+            },
+            "regions": {
+              "include": [
+                "south america"
+              ],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 16633,
+      "event": {
+        "event": "stage_end",
+        "stage": "filter-by-tax",
+        "ts": "2026-06-09T17:16:36.382116+00:00",
+        "data": {
+          "surviving_page_ids": 1,
+          "dropped": 3
+        }
+      }
+    },
+    {
+      "tOffsetMs": 16634,
+      "event": {
+        "event": "stage_start",
+        "stage": "apply-param-filters",
+        "ts": "2026-06-09T17:16:36.382116+00:00",
+        "data": {
+          "page_ids": 1,
+          "filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": 5000.0
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 16765,
+      "event": {
+        "event": "stage_end",
+        "stage": "apply-param-filters",
+        "ts": "2026-06-09T17:16:36.505620+00:00",
+        "data": {
+          "surviving_page_ids": 1,
+          "dropped": 0
+        }
+      }
+    },
+    {
+      "tOffsetMs": 17762,
+      "event": {
+        "event": "stage_start",
+        "stage": "fetch-details",
+        "ts": "2026-06-09T17:16:37.511598+00:00",
+        "data": {
+          "page_ids": 1
+        }
+      }
+    },
+    {
+      "tOffsetMs": 17855,
+      "event": {
+        "event": "stage_end",
+        "stage": "fetch-details",
+        "ts": "2026-06-09T17:16:37.603989+00:00",
+        "data": {
+          "enriched_results": 1,
+          "warnings": 0
+        }
+      }
+    },
+    {
+      "tOffsetMs": 17856,
+      "event": {
+        "event": "stage_start",
+        "stage": "rank-format",
+        "ts": "2026-06-09T17:16:37.605011+00:00",
+        "data": {
+          "results": 1
+        }
+      }
+    },
+    {
+      "tOffsetMs": 17858,
+      "event": {
+        "event": "stage_end",
+        "stage": "rank-format",
+        "ts": "2026-06-09T17:16:37.607174+00:00",
+        "data": {
+          "top_score": 0.578190744,
+          "ranked": [
+            {
+              "title": "Tres Destinos Top",
+              "score": 0.5782
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 17859,
+      "event": {
+        "event": "result",
+        "ts": "2026-06-09T17:16:37.607174+00:00",
+        "data": {
+          "status": "success",
+          "query": "cataratas en brasil hasta 5000 dolares",
+          "results": [
+            {
+              "id": "3383",
+              "title": "Tres Destinos Top",
+              "content": "This itinerary is a 9-day trip to three top destinations in South America: Rio de Janeiro, Iguazú, and Buenos Aires. It includes flights between cities, airport transfers, accommodation with breakfast, guided tours in Rio de Janeiro and Buenos Aires, visits to both the Argentine and Brazilian sides of the Iguazú Falls, and travel insurance. The main activities include exploring Rio de Janeiro's landmarks, visiting the Iguazú National Park, and taking a city tour in Buenos Aires. The trip ends with a return flight to Mexico City.",
+              "score": 0.578190744,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "iguazú",
+                    "rio de janeiro"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina",
+                    "brazil"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            }
+          ],
+          "processed_query": "waterfalls in Brazil",
+          "processor_filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": 5000.0
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          },
+          "taxonomy_filters": {
+            "cities": {
+              "include": [
+                "rio de janeiro"
+              ],
+              "exclude": []
+            },
+            "countries": {
+              "include": [
+                "brazil"
+              ],
+              "exclude": []
+            },
+            "regions": {
+              "include": [
+                "south america"
+              ],
+              "exclude": []
+            }
+          },
+          "warnings": null,
+          "errors": null
+        }
+      }
+    },
+    {
+      "tOffsetMs": 17873,
+      "event": {
+        "event": "done",
+        "ts": "2026-06-09T17:16:37.609131+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "default": "playa.json",
+  "examples": [
+    {
+      "label": "Playa, hasta USD 3000",
+      "query": "playa hasta 3000 dolares",
+      "file": "playa.json",
+      "verify": "price"
+    },
+    {
+      "label": "Viajes a Brasil",
+      "query": "viajes a brasil",
+      "file": "brasil.json",
+      "verify": "tax_include"
+    },
+    {
+      "label": "Viajes que NO sean a Brasil",
+      "query": "viajes que no sean a brasil",
+      "file": "sin-brasil.json",
+      "verify": "tax_exclude"
+    },
+    {
+      "label": "Cataratas en Brasil, hasta USD 5000",
+      "query": "cataratas en brasil hasta 5000 dolares",
+      "file": "cataratas.json",
+      "verify": "price,tax_include"
+    }
+  ]
+}
