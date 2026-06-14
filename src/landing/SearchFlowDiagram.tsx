@@ -156,7 +156,7 @@ export default function SearchFlowDiagram() {
       <VArrow x={MX} y1={625} y2={639} />
       <Node cx={MX} y={641} w={220} title="Filter by Taxonomy" sub="drop off-place packages" />
       <VArrow x={MX} y1={685} y2={699} />
-      <Node cx={MX} y={701} w={220} title="Apply Param Filters" sub="drop out-of-range · SQL (any engine)" />
+      <Node cx={MX} y={701} w={220} title="Apply Param Filters" sub="drop out-of-range · SQL" />
       <VArrow x={MX} y1={745} y2={759} />
       <Node cx={MX} y={761} w={200} h={48} stroke="#10b981" accent="#6ee7b7" title="Rank & Format" sub="score + taxonomy tags (city · country · region)" />
     </svg>

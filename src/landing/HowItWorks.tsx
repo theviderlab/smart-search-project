@@ -33,7 +33,7 @@ const CONCEPTS: { term: string; lead: string; bullets: string[] }[] = [
     lead: 'Filters come from two cooperating parts:',
     bullets: [
       'LLM — reads your query and pulls the filters out of it.',
-      'SQL (any engine) — applies hard numeric/date conditions (price, dates) on the catalog.',
+      'SQL — applies hard numeric/date conditions (price, dates) on the catalog.',
       'The LLM brings meaning; SQL brings exact precision.',
     ],
   },
@@ -43,12 +43,12 @@ const SEARCH_STEPS: { n: string; title: string; body: string }[] = [
   {
     n: '1',
     title: 'Semantic match — vectors',
-    body: 'Your query is turned into an embedding: a vector of numbers that captures its meaning. Pinecone returns the closest product vectors by similarity — so "a warm beach escape" matches coastal trips even with no words in common. Content vectors (Pipeline A) and taxonomy vectors (Pipeline B) are searched, then merged into one list — a union by product (not a join or a sum): a product found by both searches keeps its highest score.',
+    body: 'Your query is turned into an embedding: a vector of numbers that captures its meaning. Pinecone returns the closest product vectors by similarity — so "a warm beach escape" matches coastal trips even with no words in common. Content vectors (Pipeline A) and taxonomy vectors (Pipeline B) are searched, then merged into one list — a union by product: a product found by both searches keeps its highest score.',
   },
   {
     n: '2',
     title: 'Structured filters — two kinds',
-    body: 'An LLM turns the query into filters. Place filters (countries, cities, regions to include or exclude) are matched against the taxonomy tags; numeric/date filters (price, trip length, dates) run against the relational catalog — a SQL database, any engine. Anything off-place or out of range is dropped.',
+    body: 'An LLM turns the query into filters. Place filters (countries, cities, regions to include or exclude) are matched against the taxonomy tags; numeric/date filters (price, trip length, dates) run against the relational catalog — a SQL database. Anything off-place or out of range is dropped.',
   },
   {
     n: '3',
