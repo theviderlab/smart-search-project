@@ -7,8 +7,8 @@ export default function Footer() {
         <div>
           <div className="font-semibold text-slate-200">Smart Search</div>
           <div className="mt-1 max-w-xl">
-            Semantic product search for e-commerce, powered by AI — the full pipeline and
-            admin dashboard are production-ready (active development).
+            Semantic product search for e-commerce, powered by AI — understands shopper
+            intent instead of matching keywords.
           </div>
         </div>
         <div className="shrink-0 text-left sm:text-right">

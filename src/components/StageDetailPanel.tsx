@@ -16,8 +16,6 @@ export default function StageDetailPanel({ stage }: Props) {
     )
   }
   const def = STAGES_BY_ID[stage.id]
-  const duration =
-    stage.startedAt && stage.finishedAt ? `${(stage.finishedAt - stage.startedAt).toFixed(0)} ms` : null
 
   return (
     <div className="border-b border-slate-800 px-4 py-3">
@@ -25,7 +23,6 @@ export default function StageDetailPanel({ stage }: Props) {
         <h3 className="text-sm font-semibold text-slate-100">{displayTitle(stage.id)}</h3>
         <span className="text-[10px] uppercase tracking-wide text-slate-500">
           {stage.status}
-          {duration ? ` • ${duration}` : ''}
         </span>
       </div>
       <p className="mt-1 text-xs text-slate-400">{def?.description}</p>

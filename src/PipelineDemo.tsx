@@ -38,7 +38,6 @@ export default function PipelineDemo() {
   const [response, setResponse] = useState<SearchResponse | null>(null)
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const [selectedStageId, setSelectedStageId] = useState<string | null>(null)
-  const [elapsedMs, setElapsedMs] = useState(0)
   const [examples, setExamples] = useState<DemoExample[]>([])
 
   // In replay (Pages demo) mode, load the example queries for the chips.
@@ -68,7 +67,6 @@ export default function PipelineDemo() {
       req: { account: string; query: string; k: number },
       signal: AbortSignal,
     ) => {
-      const startedAt = performance.now()
       // Same signature for both, so the only difference is the event source.
       const streamFn = USE_REPLAY ? replaySearchStream : searchDocumentsStream
       const apply = (event: Parameters<Parameters<typeof streamFn>[1]>[0]) => {
@@ -79,9 +77,7 @@ export default function PipelineDemo() {
         signal,
       })
       if (recorder) downloadRecording(req, recorder.events)
-      const elapsed = performance.now() - startedAt
       setResponse(finalResponse)
-      setElapsedMs(elapsed)
       setMode(USE_REPLAY ? 'demo' : 'live')
       setStatus('done')
     },
@@ -100,7 +96,6 @@ export default function PipelineDemo() {
       try {
         const res = await searchDocuments(req)
         const elapsed = performance.now() - startedAt
-        setElapsedMs(elapsed)
         if (elapsed < TOTAL_ESTIMATED_MS * 0.9) {
           handle.finishNow('done')
         } else {
@@ -217,7 +212,7 @@ export default function PipelineDemo() {
               {status === 'idle' && 'ready'}
               {status === 'running' && 'streaming…'}
               {status === 'awaiting' && 'waiting…'}
-              {status === 'done' && `done in ${(elapsedMs / 1000).toFixed(2)}s`}
+              {status === 'done' && 'done'}
               {status === 'error' && <span className="text-red-400">error</span>}
             </span>
           </div>

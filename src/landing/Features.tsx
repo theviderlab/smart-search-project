@@ -20,14 +20,6 @@ const FEATURES: { title: string; body: string }[] = [
     body: 'Each account has its own Pinecone namespace; categories and prompts are configured independently.',
   },
   {
-    title: 'React Admin Dashboard',
-    body: 'Full administration UI: URL ingestion, pipeline control, live search, taxonomy approval, and prompt management.',
-  },
-  {
-    title: 'REST API',
-    body: 'FastAPI with 18 endpoint families, interactive Swagger/ReDoc docs, RFC 7807 error responses, and CORS support.',
-  },
-  {
     title: 'Multi-Model LLM',
     body: 'OpenRouter allows switching LLM providers without code changes; LangChain handles orchestration.',
   },
