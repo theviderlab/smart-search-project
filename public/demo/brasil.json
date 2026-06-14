@@ -1,0 +1,593 @@
+{
+  "account": "Travel Demo",
+  "query": "trips to Brazil",
+  "recordedAt": "2026-06-14T11:03:10.457057+00:00",
+  "events": [
+    {
+      "tOffsetMs": 0,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-account",
+        "ts": "2026-06-14T11:02:59.940844+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 2,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-account",
+        "ts": "2026-06-14T11:02:59.940844+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 6,
+      "event": {
+        "event": "stage_start",
+        "stage": "enhance-query",
+        "ts": "2026-06-14T11:02:59.940844+00:00",
+        "data": {
+          "query": "trips to Brazil"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 804,
+      "event": {
+        "event": "stage_end",
+        "stage": "enhance-query",
+        "ts": "2026-06-14T11:03:00.744694+00:00",
+        "data": {
+          "processed_query": "trips to Brazil travel Brazil tourism Brazil vacations Brazil"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 806,
+      "event": {
+        "event": "stage_start",
+        "stage": "extract-filters",
+        "ts": "2026-06-14T11:03:00.744694+00:00",
+        "data": {
+          "query": "trips to Brazil"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 2060,
+      "event": {
+        "event": "stage_end",
+        "stage": "extract-filters",
+        "ts": "2026-06-14T11:03:01.867697+00:00",
+        "data": {
+          "processor_filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": null
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 2061,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-namespace",
+        "ts": "2026-06-14T11:03:01.867697+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 2064,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-namespace",
+        "ts": "2026-06-14T11:03:01.909018+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 2067,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-tax-namespace",
+        "ts": "2026-06-14T11:03:01.909018+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 2069,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-tax-namespace",
+        "ts": "2026-06-14T11:03:01.999473+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 2072,
+      "event": {
+        "event": "stage_start",
+        "stage": "pinecone-content",
+        "ts": "2026-06-14T11:03:01.999473+00:00",
+        "data": {
+          "query": "trips to Brazil travel Brazil tourism Brazil vacations Brazil",
+          "k": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 2073,
+      "event": {
+        "event": "stage_start",
+        "stage": "pinecone-taxonomy",
+        "ts": "2026-06-14T11:03:01.999473+00:00",
+        "data": {
+          "query": "trips to Brazil travel Brazil tourism Brazil vacations Brazil",
+          "k": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 4366,
+      "event": {
+        "event": "stage_end",
+        "stage": "pinecone-taxonomy",
+        "ts": "2026-06-14T11:03:04.305862+00:00",
+        "data": {
+          "hits": 10,
+          "top_matches": [
+            {
+              "match": "Brazil, situated in South America, is a diverse and vibrant country known for it",
+              "score": 0.5852
+            },
+            {
+              "match": "Brazil is a country in South America known for its vast Amazon rainforest, diver",
+              "score": 0.5705
+            },
+            {
+              "match": "Rio de Janeiro is a vibrant city in Brazil known for its stunning beaches, lush ",
+              "score": 0.487
+            },
+            {
+              "match": "Brazil is a country with a rich cultural identity and historical heritage. It is",
+              "score": 0.4821
+            },
+            {
+              "match": "Rio de Janeiro is a vibrant city known for its lively atmosphere, beautiful beac",
+              "score": 0.4595
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 4936,
+      "event": {
+        "event": "stage_end",
+        "stage": "pinecone-content",
+        "ts": "2026-06-14T11:03:04.449616+00:00",
+        "data": {
+          "hits": 10,
+          "top_matches": [
+            {
+              "match": "The \"Tres Destinos Top\" tour package includes a 9-day trip to Rio de Janeiro, Ig",
+              "score": 0.5735
+            },
+            {
+              "match": "The main purpose of the \"Tres Destinos Top\" tour package is a combination of cul",
+              "score": 0.5557
+            },
+            {
+              "match": "This itinerary is a 9-day trip to three top destinations in South America: Rio d",
+              "score": 0.5487
+            },
+            {
+              "match": "The tour package \"Tres Destinos Top\" includes visits to three popular destinatio",
+              "score": 0.5397
+            },
+            {
+              "match": "This trip itinerary is for an 8-day journey to Argentina and Uruguay. It include",
+              "score": 0.4402
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 4939,
+      "event": {
+        "event": "stage_start",
+        "stage": "process-direct",
+        "ts": "2026-06-14T11:03:04.449616+00:00",
+        "data": {
+          "hits": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 4940,
+      "event": {
+        "event": "stage_end",
+        "stage": "process-direct",
+        "ts": "2026-06-14T11:03:04.449616+00:00",
+        "data": {
+          "unique_page_ids": 3
+        }
+      }
+    },
+    {
+      "tOffsetMs": 4941,
+      "event": {
+        "event": "stage_start",
+        "stage": "expand-tax-hits",
+        "ts": "2026-06-14T11:03:04.449616+00:00",
+        "data": {
+          "tax_hits": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 4941,
+      "event": {
+        "event": "stage_end",
+        "stage": "expand-tax-hits",
+        "ts": "2026-06-14T11:03:04.874675+00:00",
+        "data": {
+          "expanded_page_ids": 9
+        }
+      }
+    },
+    {
+      "tOffsetMs": 4942,
+      "event": {
+        "event": "stage_start",
+        "stage": "merge-results",
+        "ts": "2026-06-14T11:03:04.874675+00:00",
+        "data": {
+          "direct": 3,
+          "taxonomy": 9
+        }
+      }
+    },
+    {
+      "tOffsetMs": 4942,
+      "event": {
+        "event": "stage_end",
+        "stage": "merge-results",
+        "ts": "2026-06-14T11:03:04.874675+00:00",
+        "data": {
+          "merged_page_ids": 9
+        }
+      }
+    },
+    {
+      "tOffsetMs": 4942,
+      "event": {
+        "event": "stage_start",
+        "stage": "extract-tax-filters",
+        "ts": "2026-06-14T11:03:04.874675+00:00",
+        "data": {
+          "query": "trips to Brazil",
+          "page_ids": 9
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9289,
+      "event": {
+        "event": "stage_end",
+        "stage": "extract-tax-filters",
+        "ts": "2026-06-14T11:03:09.229021+00:00",
+        "data": {
+          "criteria": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [
+                "brasil",
+                "brazil"
+              ],
+              "exclude": []
+            },
+            "regions": {
+              "include": [
+                "américa",
+                "south america",
+                "sudamérica"
+              ],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9291,
+      "event": {
+        "event": "stage_start",
+        "stage": "filter-by-tax",
+        "ts": "2026-06-14T11:03:09.229021+00:00",
+        "data": {
+          "page_ids": 9,
+          "criteria": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [
+                "brasil",
+                "brazil"
+              ],
+              "exclude": []
+            },
+            "regions": {
+              "include": [
+                "américa",
+                "south america",
+                "sudamérica"
+              ],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9338,
+      "event": {
+        "event": "stage_end",
+        "stage": "filter-by-tax",
+        "ts": "2026-06-14T11:03:09.270273+00:00",
+        "data": {
+          "surviving_page_ids": 2,
+          "dropped": 7
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9339,
+      "event": {
+        "event": "stage_start",
+        "stage": "apply-param-filters",
+        "ts": "2026-06-14T11:03:09.270273+00:00",
+        "data": {
+          "page_ids": 2,
+          "filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": null
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9342,
+      "event": {
+        "event": "stage_end",
+        "stage": "apply-param-filters",
+        "ts": "2026-06-14T11:03:09.270273+00:00",
+        "data": {
+          "surviving_page_ids": 2,
+          "dropped": 0
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10336,
+      "event": {
+        "event": "stage_start",
+        "stage": "fetch-details",
+        "ts": "2026-06-14T11:03:10.276790+00:00",
+        "data": {
+          "page_ids": 2
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10510,
+      "event": {
+        "event": "stage_end",
+        "stage": "fetch-details",
+        "ts": "2026-06-14T11:03:10.450495+00:00",
+        "data": {
+          "enriched_results": 2,
+          "warnings": 0
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10510,
+      "event": {
+        "event": "stage_start",
+        "stage": "rank-format",
+        "ts": "2026-06-14T11:03:10.450495+00:00",
+        "data": {
+          "results": 2
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10511,
+      "event": {
+        "event": "stage_end",
+        "stage": "rank-format",
+        "ts": "2026-06-14T11:03:10.450495+00:00",
+        "data": {
+          "top_score": 0.585186422,
+          "ranked": [
+            {
+              "title": "Tres Destinos Top",
+              "score": 0.5852
+            },
+            {
+              "title": "Mas Brasil Rio de Janeiro E Iguazu",
+              "score": 0.5852
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10511,
+      "event": {
+        "event": "result",
+        "ts": "2026-06-14T11:03:10.450495+00:00",
+        "data": {
+          "status": "success",
+          "query": "trips to Brazil",
+          "results": [
+            {
+              "id": "3383",
+              "title": "Tres Destinos Top",
+              "content": "This itinerary is a 9-day trip to Rio de Janeiro, Iguazú, and Buenos Aires. It includes airport transfers, guided tours, visits to iconic landmarks like Christ the Redeemer and Sugar Loaf, excursions to the Argentine and Brazilian Falls, a City Tour of Buenos Aires, and accommodation with breakfast included. The trip ends with a return flight to Mexico City.",
+              "score": 0.585186422,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "iguazú",
+                    "rio de janeiro"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina",
+                    "brazil"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america",
+                    "sudamérica"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3436",
+              "title": "Mas Brasil Rio de Janeiro E Iguazu",
+              "content": "This itinerary is for an 8-day trip to Brazil, starting with flights from Mexico to Rio de Janeiro. The trip includes 3 nights in Rio with a full-day guided tour visiting iconic landmarks like Christ the Redeemer and Sugar Loaf. There is a free day for optional activities in Rio before flying to Foz do Iguazú for 3 nights. In Foz do Iguazú, there are excursions to both the Brazilian and Argentine sides of the Iguazu Falls. The trip ends with a flight back to Mexico City.",
+              "score": 0.585186422,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "foz do iguazú",
+                    "rio de janeiro"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "brazil"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            }
+          ],
+          "processed_query": "trips to Brazil travel Brazil tourism Brazil vacations Brazil",
+          "processor_filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": null
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          },
+          "taxonomy_filters": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [
+                "brasil",
+                "brazil"
+              ],
+              "exclude": []
+            },
+            "regions": {
+              "include": [
+                "américa",
+                "south america",
+                "sudamérica"
+              ],
+              "exclude": []
+            }
+          },
+          "warnings": null,
+          "errors": null
+        }
+      }
+    },
+    {
+      "tOffsetMs": 10517,
+      "event": {
+        "event": "done",
+        "ts": "2026-06-14T11:03:10.452509+00:00"
+      }
+    }
+  ]
+}
