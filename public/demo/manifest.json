@@ -2,26 +2,26 @@
   "default": "playa.json",
   "examples": [
     {
-      "label": "Playa, hasta USD 3000",
-      "query": "playa hasta 3000 dolares",
+      "label": "Beaches under USD 3,000",
+      "query": "beach trips under 3000 dollars",
       "file": "playa.json",
       "verify": "price"
     },
     {
-      "label": "Viajes a Brasil",
-      "query": "viajes a brasil",
+      "label": "Trips to Brazil",
+      "query": "trips to Brazil",
       "file": "brasil.json",
       "verify": "tax_include"
     },
     {
-      "label": "Viajes que NO sean a Brasil",
-      "query": "viajes que no sean a brasil",
+      "label": "Trips avoiding Brazil",
+      "query": "trips avoiding Brazil",
       "file": "sin-brasil.json",
       "verify": "tax_exclude"
     },
     {
-      "label": "Cataratas en Brasil, hasta USD 5000",
-      "query": "cataratas en brasil hasta 5000 dolares",
+      "label": "Iguazu Falls, under USD 8,000",
+      "query": "Iguazu trips in Brazil under 8000 dollars",
       "file": "cataratas.json",
       "verify": "price,tax_include"
     }
