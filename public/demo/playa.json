@@ -1,0 +1,654 @@
+{
+  "account": "Travel Demo",
+  "query": "beach trips under 3000 dollars",
+  "recordedAt": "2026-06-14T11:02:52.466649+00:00",
+  "events": [
+    {
+      "tOffsetMs": 0,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-account",
+        "ts": "2026-06-14T11:02:37.339836+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 2,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-account",
+        "ts": "2026-06-14T11:02:37.339836+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 5,
+      "event": {
+        "event": "stage_start",
+        "stage": "enhance-query",
+        "ts": "2026-06-14T11:02:37.339836+00:00",
+        "data": {
+          "query": "beach trips under 3000 dollars"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 807,
+      "event": {
+        "event": "stage_end",
+        "stage": "enhance-query",
+        "ts": "2026-06-14T11:02:38.153098+00:00",
+        "data": {
+          "processed_query": "affordable beach trips"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 808,
+      "event": {
+        "event": "stage_start",
+        "stage": "extract-filters",
+        "ts": "2026-06-14T11:02:38.153098+00:00",
+        "data": {
+          "query": "beach trips under 3000 dollars"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6911,
+      "event": {
+        "event": "stage_end",
+        "stage": "extract-filters",
+        "ts": "2026-06-14T11:02:44.124004+00:00",
+        "data": {
+          "processor_filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": 3000.0
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6912,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-namespace",
+        "ts": "2026-06-14T11:02:44.124004+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 6915,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-namespace",
+        "ts": "2026-06-14T11:02:44.164235+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 6916,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-tax-namespace",
+        "ts": "2026-06-14T11:02:44.164235+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 6918,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-tax-namespace",
+        "ts": "2026-06-14T11:02:44.255941+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 6921,
+      "event": {
+        "event": "stage_start",
+        "stage": "pinecone-content",
+        "ts": "2026-06-14T11:02:44.255941+00:00",
+        "data": {
+          "query": "affordable beach trips",
+          "k": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6922,
+      "event": {
+        "event": "stage_start",
+        "stage": "pinecone-taxonomy",
+        "ts": "2026-06-14T11:02:44.255941+00:00",
+        "data": {
+          "query": "affordable beach trips",
+          "k": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9316,
+      "event": {
+        "event": "stage_end",
+        "stage": "pinecone-taxonomy",
+        "ts": "2026-06-14T11:02:46.661915+00:00",
+        "data": {
+          "hits": 10,
+          "top_matches": [
+            {
+              "match": "Uruguay, a country nestled in South America, boasts a diverse geography characte",
+              "score": 0.2809
+            },
+            {
+              "match": "Rio de Janeiro is a vibrant city known for its lively atmosphere, beautiful beac",
+              "score": 0.2666
+            },
+            {
+              "match": "Rio de Janeiro is a vibrant city in Brazil known for its stunning beaches, lush ",
+              "score": 0.252
+            },
+            {
+              "match": "Uruguay is a South American country known for its beautiful beaches, vibrant cul",
+              "score": 0.2484
+            },
+            {
+              "match": "Calafate is a picturesque city known for its stunning natural landscapes and out",
+              "score": 0.2484
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9826,
+      "event": {
+        "event": "stage_end",
+        "stage": "pinecone-content",
+        "ts": "2026-06-14T11:02:46.741002+00:00",
+        "data": {
+          "hits": 10,
+          "top_matches": [
+            {
+              "match": "The \"Tres Destinos Top\" tour package includes a 9-day trip to Rio de Janeiro, Ig",
+              "score": 0.3161
+            },
+            {
+              "match": "The main purpose of the \"Tres Destinos Top\" tour package is a combination of cul",
+              "score": 0.2915
+            },
+            {
+              "match": "This trip itinerary is for an 8-day journey to Argentina and Uruguay. It include",
+              "score": 0.2741
+            },
+            {
+              "match": "The tour package \"Tres Destinos Top\" includes visits to three popular destinatio",
+              "score": 0.2673
+            },
+            {
+              "match": "This itinerary is a 9-day trip to three top destinations in South America: Rio d",
+              "score": 0.2576
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9829,
+      "event": {
+        "event": "stage_start",
+        "stage": "process-direct",
+        "ts": "2026-06-14T11:02:46.741002+00:00",
+        "data": {
+          "hits": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9829,
+      "event": {
+        "event": "stage_end",
+        "stage": "process-direct",
+        "ts": "2026-06-14T11:02:46.741002+00:00",
+        "data": {
+          "unique_page_ids": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9830,
+      "event": {
+        "event": "stage_start",
+        "stage": "expand-tax-hits",
+        "ts": "2026-06-14T11:02:46.741002+00:00",
+        "data": {
+          "tax_hits": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9831,
+      "event": {
+        "event": "stage_end",
+        "stage": "expand-tax-hits",
+        "ts": "2026-06-14T11:02:47.170626+00:00",
+        "data": {
+          "expanded_page_ids": 7
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9832,
+      "event": {
+        "event": "stage_start",
+        "stage": "merge-results",
+        "ts": "2026-06-14T11:02:47.170626+00:00",
+        "data": {
+          "direct": 4,
+          "taxonomy": 7
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9832,
+      "event": {
+        "event": "stage_end",
+        "stage": "merge-results",
+        "ts": "2026-06-14T11:02:47.170626+00:00",
+        "data": {
+          "merged_page_ids": 7
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9832,
+      "event": {
+        "event": "stage_start",
+        "stage": "extract-tax-filters",
+        "ts": "2026-06-14T11:02:47.170626+00:00",
+        "data": {
+          "query": "beach trips under 3000 dollars",
+          "page_ids": 7
+        }
+      }
+    },
+    {
+      "tOffsetMs": 13553,
+      "event": {
+        "event": "stage_end",
+        "stage": "extract-tax-filters",
+        "ts": "2026-06-14T11:02:50.896711+00:00",
+        "data": {
+          "criteria": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [],
+              "exclude": []
+            },
+            "regions": {
+              "include": [
+                "south america",
+                "américa",
+                "sudamérica"
+              ],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 13554,
+      "event": {
+        "event": "stage_start",
+        "stage": "filter-by-tax",
+        "ts": "2026-06-14T11:02:50.896711+00:00",
+        "data": {
+          "page_ids": 7,
+          "criteria": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [],
+              "exclude": []
+            },
+            "regions": {
+              "include": [
+                "south america",
+                "américa",
+                "sudamérica"
+              ],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 13601,
+      "event": {
+        "event": "stage_end",
+        "stage": "filter-by-tax",
+        "ts": "2026-06-14T11:02:50.945635+00:00",
+        "data": {
+          "surviving_page_ids": 5,
+          "dropped": 2
+        }
+      }
+    },
+    {
+      "tOffsetMs": 13602,
+      "event": {
+        "event": "stage_start",
+        "stage": "apply-param-filters",
+        "ts": "2026-06-14T11:02:50.945635+00:00",
+        "data": {
+          "page_ids": 5,
+          "filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": 3000.0
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 13738,
+      "event": {
+        "event": "stage_end",
+        "stage": "apply-param-filters",
+        "ts": "2026-06-14T11:02:51.081641+00:00",
+        "data": {
+          "surviving_page_ids": 4,
+          "dropped": 1
+        }
+      }
+    },
+    {
+      "tOffsetMs": 14747,
+      "event": {
+        "event": "stage_start",
+        "stage": "fetch-details",
+        "ts": "2026-06-14T11:02:52.090715+00:00",
+        "data": {
+          "page_ids": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 15112,
+      "event": {
+        "event": "stage_end",
+        "stage": "fetch-details",
+        "ts": "2026-06-14T11:02:52.456060+00:00",
+        "data": {
+          "enriched_results": 4,
+          "warnings": 0
+        }
+      }
+    },
+    {
+      "tOffsetMs": 15113,
+      "event": {
+        "event": "stage_start",
+        "stage": "rank-format",
+        "ts": "2026-06-14T11:02:52.456060+00:00",
+        "data": {
+          "results": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 15119,
+      "event": {
+        "event": "stage_end",
+        "stage": "rank-format",
+        "ts": "2026-06-14T11:02:52.458193+00:00",
+        "data": {
+          "top_score": 0.28311208675,
+          "ranked": [
+            {
+              "title": "Tres Destinos Top",
+              "score": 0.2831
+            },
+            {
+              "title": "Dos Paises Por Uno Argentina y Uruguay",
+              "score": 0.2809
+            },
+            {
+              "title": "Buenos Aires y Santiago",
+              "score": 0.2482
+            },
+            {
+              "title": "Patagonia Infinita Buenos Aires y Calafate",
+              "score": 0.2479
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 15120,
+      "event": {
+        "event": "result",
+        "ts": "2026-06-14T11:02:52.458193+00:00",
+        "data": {
+          "status": "success",
+          "query": "beach trips under 3000 dollars",
+          "results": [
+            {
+              "id": "3383",
+              "title": "Tres Destinos Top",
+              "content": "This itinerary is a 9-day trip to Rio de Janeiro, Iguazú, and Buenos Aires. It includes airport transfers, guided tours, visits to iconic landmarks like Christ the Redeemer and Sugar Loaf, excursions to the Argentine and Brazilian Falls, a City Tour of Buenos Aires, and accommodation with breakfast included. The trip ends with a return flight to Mexico City.",
+              "score": 0.28311208675,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "iguazú",
+                    "rio de janeiro"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina",
+                    "brazil"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america",
+                    "sudamérica"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3382",
+              "title": "Dos Paises Por Uno Argentina y Uruguay",
+              "content": "This 8-day trip to Argentina and Uruguay includes flights from Mexico to Buenos Aires and Montevideo, airport transfers, a city tour of Buenos Aires, a tango dinner show, a visit to Colonia del Sacramento, a city tour of Montevideo, an excursion to Punta del Este, and more. The itinerary involves exploring key attractions in both cities, enjoying cultural experiences, and discovering the natural beauty of the region. The trip ends with a flight back to Mexico.",
+              "score": 0.280861825,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "colonia del sacramento",
+                    "montevideo",
+                    "punta del este"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina",
+                    "uruguay"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3380",
+              "title": "Buenos Aires y Santiago",
+              "content": "The \"Buenos Aires and Santiago\" itinerary is an 8-day/6-night trip that includes airfare from Mexico to Buenos Aires and Santiago, airport transfers, city tours in Buenos Aires and Santiago, an excursion to Viña del Mar and Valparaíso, accommodation with breakfast, and AC35 travel assistance insurance. The trip begins with 3 nights in Buenos Aires, exploring the city's main attractions and enjoying a free day. Then, travelers will fly to Santiago for 3 nights, with a city tour exploring historical and modern landmarks, followed by a day trip to Valparaíso and Viña del Mar. The trip concludes with a flight back to Mexico City.",
+              "score": 0.24822171,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "santiago",
+                    "valparaíso",
+                    "viña del mar"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina",
+                    "chile"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3381",
+              "title": "Patagonia Infinita Buenos Aires y Calafate",
+              "content": "The \"Endless Patagonia: Buenos Aires and Calafate\" package includes a trip spanning 8 days and 6 nights. The itinerary consists of flights from Mexico to Buenos Aires and Calafate, airport transfers, accommodation in both cities, a panoramic City Tour of Buenos Aires, an excursion to the Perito Moreno Glacier, travel insurance, and checked luggage allowances. Here is a summary of the main activities for each day:\n\n- Day 01: Travel from Mexico to Buenos Aires.\n- Day 02: Arrival in Buenos Aires, transfer to the hotel.\n- Day 03: Panoramic City Tour of Buenos Aires, visiting various landmarks.\n- Day 04: Free day for optional activities in Buenos Aires.\n- Day 05: Flight to Calafate, transfer to the hotel.\n- Day 06: Excursion to the Perito Moreno Glacier, exploring the park and glacier.\n- Day 07: Return to Buenos Aires from Calafate.\n- Day 08: Transfer to the airport for the return flight to Mexico City.\n\nThroughout the trip, travelers will experience the culture, history, and natural beauty of Buenos Aires and Calafate, with opportunities for exploration and relaxation.",
+              "score": 0.2478596345,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "calafate"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "américa",
+                    "south america",
+                    "sudamérica"
+                  ]
+                }
+              ]
+            }
+          ],
+          "processed_query": "affordable beach trips",
+          "processor_filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": 3000.0
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          },
+          "taxonomy_filters": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [],
+              "exclude": []
+            },
+            "regions": {
+              "include": [
+                "south america",
+                "américa",
+                "sudamérica"
+              ],
+              "exclude": []
+            }
+          },
+          "warnings": null,
+          "errors": null
+        }
+      }
+    },
+    {
+      "tOffsetMs": 15130,
+      "event": {
+        "event": "done",
+        "ts": "2026-06-14T11:02:52.458193+00:00"
+      }
+    }
+  ]
+}

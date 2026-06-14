@@ -1,0 +1,673 @@
+{
+  "account": "Travel Demo",
+  "query": "trips avoiding Brazil",
+  "recordedAt": "2026-06-14T11:03:34.193245+00:00",
+  "events": [
+    {
+      "tOffsetMs": 0,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-account",
+        "ts": "2026-06-14T11:03:19.241413+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 2,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-account",
+        "ts": "2026-06-14T11:03:19.241413+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 6,
+      "event": {
+        "event": "stage_start",
+        "stage": "enhance-query",
+        "ts": "2026-06-14T11:03:19.241413+00:00",
+        "data": {
+          "query": "trips avoiding Brazil"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 1141,
+      "event": {
+        "event": "stage_end",
+        "stage": "enhance-query",
+        "ts": "2026-06-14T11:03:20.384322+00:00",
+        "data": {
+          "processed_query": "trips excluding Brazil or trips to countries other than Brazil"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 1143,
+      "event": {
+        "event": "stage_start",
+        "stage": "extract-filters",
+        "ts": "2026-06-14T11:03:20.384322+00:00",
+        "data": {
+          "query": "trips avoiding Brazil"
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6736,
+      "event": {
+        "event": "stage_end",
+        "stage": "extract-filters",
+        "ts": "2026-06-14T11:03:25.830898+00:00",
+        "data": {
+          "processor_filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": null
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6738,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-namespace",
+        "ts": "2026-06-14T11:03:25.830898+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 6740,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-namespace",
+        "ts": "2026-06-14T11:03:25.878392+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 6740,
+      "event": {
+        "event": "stage_start",
+        "stage": "resolve-tax-namespace",
+        "ts": "2026-06-14T11:03:25.878392+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 6742,
+      "event": {
+        "event": "stage_end",
+        "stage": "resolve-tax-namespace",
+        "ts": "2026-06-14T11:03:25.978493+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 6745,
+      "event": {
+        "event": "stage_start",
+        "stage": "pinecone-content",
+        "ts": "2026-06-14T11:03:25.978493+00:00",
+        "data": {
+          "query": "trips excluding Brazil or trips to countries other than Brazil",
+          "k": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6746,
+      "event": {
+        "event": "stage_start",
+        "stage": "pinecone-taxonomy",
+        "ts": "2026-06-14T11:03:25.978493+00:00",
+        "data": {
+          "query": "trips excluding Brazil or trips to countries other than Brazil",
+          "k": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9205,
+      "event": {
+        "event": "stage_end",
+        "stage": "pinecone-content",
+        "ts": "2026-06-14T11:03:28.446986+00:00",
+        "data": {
+          "hits": 10,
+          "top_matches": [
+            {
+              "match": "The \"Tres Destinos Top\" tour package includes a 9-day trip to Rio de Janeiro, Ig",
+              "score": 0.5
+            },
+            {
+              "match": "This itinerary is a 9-day trip to three top destinations in South America: Rio d",
+              "score": 0.4668
+            },
+            {
+              "match": "The tour package \"Tres Destinos Top\" includes visits to three popular destinatio",
+              "score": 0.4627
+            },
+            {
+              "match": "The main purpose of the \"Tres Destinos Top\" tour package is a combination of cul",
+              "score": 0.4359
+            },
+            {
+              "match": "This trip itinerary is for an 8-day journey to Argentina and Uruguay. It include",
+              "score": 0.4175
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9783,
+      "event": {
+        "event": "stage_end",
+        "stage": "pinecone-taxonomy",
+        "ts": "2026-06-14T11:03:28.575568+00:00",
+        "data": {
+          "hits": 10,
+          "top_matches": [
+            {
+              "match": "Brazil, situated in South America, is a diverse and vibrant country known for it",
+              "score": 0.3957
+            },
+            {
+              "match": "Taxonomy type: Travel Destination Taxonomy description: Geographic Regions Value",
+              "score": 0.382
+            },
+            {
+              "match": "Brazil is a country in South America known for its vast Amazon rainforest, diver",
+              "score": 0.3706
+            },
+            {
+              "match": "Brazil is a country with a rich cultural identity and historical heritage. It is",
+              "score": 0.3154
+            },
+            {
+              "match": "\"Viña del Mar\" is a city included in the package of destinations.",
+              "score": 0.2804
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9786,
+      "event": {
+        "event": "stage_start",
+        "stage": "process-direct",
+        "ts": "2026-06-14T11:03:28.575568+00:00",
+        "data": {
+          "hits": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9787,
+      "event": {
+        "event": "stage_end",
+        "stage": "process-direct",
+        "ts": "2026-06-14T11:03:28.575568+00:00",
+        "data": {
+          "unique_page_ids": 3
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9789,
+      "event": {
+        "event": "stage_start",
+        "stage": "expand-tax-hits",
+        "ts": "2026-06-14T11:03:28.575568+00:00",
+        "data": {
+          "tax_hits": 10
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9790,
+      "event": {
+        "event": "stage_end",
+        "stage": "expand-tax-hits",
+        "ts": "2026-06-14T11:03:29.023243+00:00",
+        "data": {
+          "expanded_page_ids": 9
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9791,
+      "event": {
+        "event": "stage_start",
+        "stage": "merge-results",
+        "ts": "2026-06-14T11:03:29.023243+00:00",
+        "data": {
+          "direct": 3,
+          "taxonomy": 9
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9791,
+      "event": {
+        "event": "stage_end",
+        "stage": "merge-results",
+        "ts": "2026-06-14T11:03:29.023243+00:00",
+        "data": {
+          "merged_page_ids": 9
+        }
+      }
+    },
+    {
+      "tOffsetMs": 9792,
+      "event": {
+        "event": "stage_start",
+        "stage": "extract-tax-filters",
+        "ts": "2026-06-14T11:03:29.023243+00:00",
+        "data": {
+          "query": "trips avoiding Brazil",
+          "page_ids": 9
+        }
+      }
+    },
+    {
+      "tOffsetMs": 13176,
+      "event": {
+        "event": "stage_end",
+        "stage": "extract-tax-filters",
+        "ts": "2026-06-14T11:03:32.406270+00:00",
+        "data": {
+          "criteria": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [],
+              "exclude": [
+                "brasil",
+                "brazil"
+              ]
+            },
+            "regions": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 13180,
+      "event": {
+        "event": "stage_start",
+        "stage": "filter-by-tax",
+        "ts": "2026-06-14T11:03:32.406270+00:00",
+        "data": {
+          "page_ids": 9,
+          "criteria": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [],
+              "exclude": [
+                "brasil",
+                "brazil"
+              ]
+            },
+            "regions": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 13232,
+      "event": {
+        "event": "stage_end",
+        "stage": "filter-by-tax",
+        "ts": "2026-06-14T11:03:32.470074+00:00",
+        "data": {
+          "surviving_page_ids": 5,
+          "dropped": 4
+        }
+      }
+    },
+    {
+      "tOffsetMs": 13234,
+      "event": {
+        "event": "stage_start",
+        "stage": "apply-param-filters",
+        "ts": "2026-06-14T11:03:32.470074+00:00",
+        "data": {
+          "page_ids": 5,
+          "filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": null
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "tOffsetMs": 13238,
+      "event": {
+        "event": "stage_end",
+        "stage": "apply-param-filters",
+        "ts": "2026-06-14T11:03:32.478346+00:00",
+        "data": {
+          "surviving_page_ids": 5,
+          "dropped": 0
+        }
+      }
+    },
+    {
+      "tOffsetMs": 14252,
+      "event": {
+        "event": "stage_start",
+        "stage": "fetch-details",
+        "ts": "2026-06-14T11:03:33.493575+00:00",
+        "data": {
+          "page_ids": 5
+        }
+      }
+    },
+    {
+      "tOffsetMs": 14941,
+      "event": {
+        "event": "stage_end",
+        "stage": "fetch-details",
+        "ts": "2026-06-14T11:03:34.177790+00:00",
+        "data": {
+          "enriched_results": 5,
+          "warnings": 0
+        }
+      }
+    },
+    {
+      "tOffsetMs": 14942,
+      "event": {
+        "event": "stage_start",
+        "stage": "rank-format",
+        "ts": "2026-06-14T11:03:34.177790+00:00",
+        "data": {
+          "results": 5
+        }
+      }
+    },
+    {
+      "tOffsetMs": 14946,
+      "event": {
+        "event": "stage_end",
+        "stage": "rank-format",
+        "ts": "2026-06-14T11:03:34.177790+00:00",
+        "data": {
+          "top_score": 0.388640508,
+          "ranked": [
+            {
+              "title": "Buenos Aires y Santiago",
+              "score": 0.3886
+            },
+            {
+              "title": "Dos Paises Por Uno Argentina y Uruguay",
+              "score": 0.3852
+            },
+            {
+              "title": "Patagonia Infinita Buenos Aires y Calafate",
+              "score": 0.382
+            },
+            {
+              "title": "Colombia con Encanto",
+              "score": 0.382
+            },
+            {
+              "title": "Glamping en Peru",
+              "score": 0.382
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 14947,
+      "event": {
+        "event": "result",
+        "ts": "2026-06-14T11:03:34.185148+00:00",
+        "data": {
+          "status": "success",
+          "query": "trips avoiding Brazil",
+          "results": [
+            {
+              "id": "3380",
+              "title": "Buenos Aires y Santiago",
+              "content": "The \"Buenos Aires and Santiago\" itinerary is an 8-day/6-night trip that includes airfare from Mexico to Buenos Aires and Santiago, airport transfers, city tours in Buenos Aires and Santiago, an excursion to Viña del Mar and Valparaíso, accommodation with breakfast, and AC35 travel assistance insurance. The trip begins with 3 nights in Buenos Aires, exploring the city's main attractions and enjoying a free day. Then, travelers will fly to Santiago for 3 nights, with a city tour exploring historical and modern landmarks, followed by a day trip to Valparaíso and Viña del Mar. The trip concludes with a flight back to Mexico City.",
+              "score": 0.388640508,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "santiago",
+                    "valparaíso",
+                    "viña del mar"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina",
+                    "chile"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3382",
+              "title": "Dos Paises Por Uno Argentina y Uruguay",
+              "content": "This 8-day trip to Argentina and Uruguay includes flights from Mexico to Buenos Aires and Montevideo, airport transfers, a city tour of Buenos Aires, a tango dinner show, a visit to Colonia del Sacramento, a city tour of Montevideo, an excursion to Punta del Este, and more. The itinerary involves exploring key attractions in both cities, enjoying cultural experiences, and discovering the natural beauty of the region. The trip ends with a flight back to Mexico.",
+              "score": 0.3851754965,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "colonia del sacramento",
+                    "montevideo",
+                    "punta del este"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina",
+                    "uruguay"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3381",
+              "title": "Patagonia Infinita Buenos Aires y Calafate",
+              "content": "The \"Endless Patagonia: Buenos Aires and Calafate\" package includes a trip spanning 8 days and 6 nights. The itinerary consists of flights from Mexico to Buenos Aires and Calafate, airport transfers, accommodation in both cities, a panoramic City Tour of Buenos Aires, an excursion to the Perito Moreno Glacier, travel insurance, and checked luggage allowances. Here is a summary of the main activities for each day:\n\n- Day 01: Travel from Mexico to Buenos Aires.\n- Day 02: Arrival in Buenos Aires, transfer to the hotel.\n- Day 03: Panoramic City Tour of Buenos Aires, visiting various landmarks.\n- Day 04: Free day for optional activities in Buenos Aires.\n- Day 05: Flight to Calafate, transfer to the hotel.\n- Day 06: Excursion to the Perito Moreno Glacier, exploring the park and glacier.\n- Day 07: Return to Buenos Aires from Calafate.\n- Day 08: Transfer to the airport for the return flight to Mexico City.\n\nThroughout the trip, travelers will experience the culture, history, and natural beauty of Buenos Aires and Calafate, with opportunities for exploration and relaxation.",
+              "score": 0.382021546,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "calafate"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "américa",
+                    "south america",
+                    "sudamérica"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3430",
+              "title": "Colombia con Encanto",
+              "content": "The \"Charming Colombia\" itinerary includes a 9-day trip with 8 nights of accommodation. The main activities planned for each day are as follows:\n\n- Day 1: Arrival in Bogotá, transfer to the hotel\n- Day 2: City tour of Bogotá, including a visit to the Gold Museum\n- Day 3: Flight to Cartagena, transfer to the hotel\n- Day 4: City tour of Cartagena, visit to San Felipe Castle\n- Day 5: Free day in Cartagena for optional activities\n- Day 6: Transfer to Santa Marta, panoramic city tour\n- Day 7: City tour of Santa Marta, visit to Quinta de San Pedro Alejandrino\n- Day 8: Free day in Santa Marta for personal activities\n- Day 9: Transfer to the airport for the flight back to Mexico City.",
+              "score": 0.382021546,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "colombia"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3439",
+              "title": "Glamping en Peru",
+              "content": "The \"Glamping in Peru\" package is an 8-day/7-night itinerary that includes:\n\n- Day 1: Arrival in Lima, transfer to hotel.\n- Day 2: City Tour of Lima and visit to Larco Museum.\n- Day 3: Flight to Cusco, City Tour of Cusco.\n- Day 4: Excursion to Sacsayhuamán Archaeological Park.\n- Day 5: Excursion to Sacred Valley with lunch, visit to Ollantaytambo.\n- Day 6: Free day in Ollantaytambo for optional experiences.\n- Day 7: Excursion to Machu Picchu with lunch.\n- Day 8: Return to Lima and flight back to Mexico.\n\nThe package includes accommodation, flights, train tickets to Machu Picchu, city tours, meals, and travel insurance. Accommodations range from hotels to a glamping experience in Ollantaytambo. The itinerary offers a mix of historical, cultural, and natural experiences in Peru.",
+              "score": 0.382021546,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "cusco",
+                    "lima",
+                    "ollantaytambo"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "peru"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            }
+          ],
+          "processed_query": "trips excluding Brazil or trips to countries other than Brazil",
+          "processor_filters": {
+            "duration_nights": {
+              "min": null,
+              "max": null
+            },
+            "duration_days": {
+              "min": null,
+              "max": null
+            },
+            "starting_price": {
+              "min": null,
+              "max": null
+            },
+            "departure_dates": {
+              "include": [],
+              "exclude": []
+            },
+            "valid_until": {
+              "include": [],
+              "exclude": []
+            }
+          },
+          "taxonomy_filters": {
+            "cities": {
+              "include": [],
+              "exclude": []
+            },
+            "countries": {
+              "include": [],
+              "exclude": [
+                "brasil",
+                "brazil"
+              ]
+            },
+            "regions": {
+              "include": [],
+              "exclude": []
+            }
+          },
+          "warnings": null,
+          "errors": null
+        }
+      }
+    },
+    {
+      "tOffsetMs": 14957,
+      "event": {
+        "event": "done",
+        "ts": "2026-06-14T11:03:34.188525+00:00"
+      }
+    }
+  ]
+}
