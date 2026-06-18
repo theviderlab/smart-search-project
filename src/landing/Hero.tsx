@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <header id="top" className="mx-auto max-w-5xl px-6 pb-6 pt-16 text-center">
       <img
-        src="/SmartSearch.png"
+        src={`${import.meta.env.BASE_URL}SmartSearch.png`}
         alt="Smart Search logo"
         className="mx-auto mb-5 h-20 w-20 invert sm:h-24 sm:w-24"
       />
