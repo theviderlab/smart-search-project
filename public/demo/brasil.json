@@ -1,65 +1,65 @@
 {
   "account": "Travel Demo",
   "query": "trips to Brazil",
-  "recordedAt": "2026-06-14T11:03:10.457057+00:00",
+  "recordedAt": "2026-06-18T18:47:58.072165+00:00",
   "events": [
     {
       "tOffsetMs": 0,
       "event": {
         "event": "stage_start",
         "stage": "resolve-account",
-        "ts": "2026-06-14T11:02:59.940844+00:00",
+        "ts": "2026-06-18T18:47:48.503627+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 2,
+      "tOffsetMs": 1,
       "event": {
         "event": "stage_end",
         "stage": "resolve-account",
-        "ts": "2026-06-14T11:02:59.940844+00:00",
+        "ts": "2026-06-18T18:47:48.503627+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 6,
+      "tOffsetMs": 3,
       "event": {
         "event": "stage_start",
         "stage": "enhance-query",
-        "ts": "2026-06-14T11:02:59.940844+00:00",
+        "ts": "2026-06-18T18:47:48.503627+00:00",
         "data": {
           "query": "trips to Brazil"
         }
       }
     },
     {
-      "tOffsetMs": 804,
+      "tOffsetMs": 2114,
       "event": {
         "event": "stage_end",
         "stage": "enhance-query",
-        "ts": "2026-06-14T11:03:00.744694+00:00",
+        "ts": "2026-06-18T18:47:50.606420+00:00",
         "data": {
-          "processed_query": "trips to Brazil travel Brazil tourism Brazil vacations Brazil"
+          "processed_query": "Brazil travel South America vacation packages Brazilian culture tours Amazon rainforest Iguazu Falls Rio de Janeiro Carnival celebrations tropical beaches coastal destinations vibrant cities São Paulo Salvador Bahia"
         }
       }
     },
     {
-      "tOffsetMs": 806,
+      "tOffsetMs": 2117,
       "event": {
         "event": "stage_start",
         "stage": "extract-filters",
-        "ts": "2026-06-14T11:03:00.744694+00:00",
+        "ts": "2026-06-18T18:47:50.606420+00:00",
         "data": {
           "query": "trips to Brazil"
         }
       }
     },
     {
-      "tOffsetMs": 2060,
+      "tOffsetMs": 5002,
       "event": {
         "event": "stage_end",
         "stage": "extract-filters",
-        "ts": "2026-06-14T11:03:01.867697+00:00",
+        "ts": "2026-06-18T18:47:53.374780+00:00",
         "data": {
           "processor_filters": {
             "duration_nights": {
@@ -87,181 +87,181 @@
       }
     },
     {
-      "tOffsetMs": 2061,
+      "tOffsetMs": 5003,
       "event": {
         "event": "stage_start",
         "stage": "resolve-namespace",
-        "ts": "2026-06-14T11:03:01.867697+00:00",
+        "ts": "2026-06-18T18:47:53.374780+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 2064,
+      "tOffsetMs": 5004,
       "event": {
         "event": "stage_end",
         "stage": "resolve-namespace",
-        "ts": "2026-06-14T11:03:01.909018+00:00",
+        "ts": "2026-06-18T18:47:53.420555+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 2067,
+      "tOffsetMs": 5004,
       "event": {
         "event": "stage_start",
         "stage": "resolve-tax-namespace",
-        "ts": "2026-06-14T11:03:01.909018+00:00",
+        "ts": "2026-06-18T18:47:53.420555+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 2069,
+      "tOffsetMs": 5006,
       "event": {
         "event": "stage_end",
         "stage": "resolve-tax-namespace",
-        "ts": "2026-06-14T11:03:01.999473+00:00",
+        "ts": "2026-06-18T18:47:53.500690+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 2072,
+      "tOffsetMs": 5007,
       "event": {
         "event": "stage_start",
         "stage": "pinecone-content",
-        "ts": "2026-06-14T11:03:01.999473+00:00",
+        "ts": "2026-06-18T18:47:53.500690+00:00",
         "data": {
-          "query": "trips to Brazil travel Brazil tourism Brazil vacations Brazil",
+          "query": "Brazil travel South America vacation packages Brazilian culture tours Amazon rainforest Iguazu Falls Rio de Janeiro Carnival celebrations tropical beaches coastal destinations vibrant cities São Paulo Salvador Bahia",
           "k": 10
         }
       }
     },
     {
-      "tOffsetMs": 2073,
+      "tOffsetMs": 5007,
       "event": {
         "event": "stage_start",
         "stage": "pinecone-taxonomy",
-        "ts": "2026-06-14T11:03:01.999473+00:00",
+        "ts": "2026-06-18T18:47:53.500690+00:00",
         "data": {
-          "query": "trips to Brazil travel Brazil tourism Brazil vacations Brazil",
+          "query": "Brazil travel South America vacation packages Brazilian culture tours Amazon rainforest Iguazu Falls Rio de Janeiro Carnival celebrations tropical beaches coastal destinations vibrant cities São Paulo Salvador Bahia",
           "k": 10
         }
       }
     },
     {
-      "tOffsetMs": 4366,
+      "tOffsetMs": 6313,
       "event": {
         "event": "stage_end",
         "stage": "pinecone-taxonomy",
-        "ts": "2026-06-14T11:03:04.305862+00:00",
+        "ts": "2026-06-18T18:47:54.808292+00:00",
         "data": {
           "hits": 10,
           "top_matches": [
             {
               "match": "Brazil, situated in South America, is a diverse and vibrant country known for it",
-              "score": 0.5852
+              "score": 0.7205
             },
             {
               "match": "Brazil is a country in South America known for its vast Amazon rainforest, diver",
-              "score": 0.5705
+              "score": 0.656
             },
             {
               "match": "Rio de Janeiro is a vibrant city in Brazil known for its stunning beaches, lush ",
-              "score": 0.487
-            },
-            {
-              "match": "Brazil is a country with a rich cultural identity and historical heritage. It is",
-              "score": 0.4821
+              "score": 0.5777
             },
             {
               "match": "Rio de Janeiro is a vibrant city known for its lively atmosphere, beautiful beac",
-              "score": 0.4595
+              "score": 0.56
+            },
+            {
+              "match": "Brazil is a country with a rich cultural identity and historical heritage. It is",
+              "score": 0.5532
             }
           ]
         }
       }
     },
     {
-      "tOffsetMs": 4936,
+      "tOffsetMs": 6748,
       "event": {
         "event": "stage_end",
         "stage": "pinecone-content",
-        "ts": "2026-06-14T11:03:04.449616+00:00",
+        "ts": "2026-06-18T18:47:54.824376+00:00",
         "data": {
           "hits": 10,
           "top_matches": [
             {
-              "match": "The \"Tres Destinos Top\" tour package includes a 9-day trip to Rio de Janeiro, Ig",
-              "score": 0.5735
-            },
-            {
               "match": "The main purpose of the \"Tres Destinos Top\" tour package is a combination of cul",
-              "score": 0.5557
-            },
-            {
-              "match": "This itinerary is a 9-day trip to three top destinations in South America: Rio d",
-              "score": 0.5487
+              "score": 0.6426
             },
             {
               "match": "The tour package \"Tres Destinos Top\" includes visits to three popular destinatio",
-              "score": 0.5397
+              "score": 0.6368
             },
             {
-              "match": "This trip itinerary is for an 8-day journey to Argentina and Uruguay. It include",
-              "score": 0.4402
+              "match": "The \"Tres Destinos Top\" tour package includes a 9-day trip to Rio de Janeiro, Ig",
+              "score": 0.625
+            },
+            {
+              "match": "This itinerary is a 9-day trip to three top destinations in South America: Rio d",
+              "score": 0.6188
+            },
+            {
+              "match": "This tour package titled \"Dos países por uno: Argentina y Uruguay\" includes visi",
+              "score": 0.5169
             }
           ]
         }
       }
     },
     {
-      "tOffsetMs": 4939,
+      "tOffsetMs": 6749,
       "event": {
         "event": "stage_start",
         "stage": "process-direct",
-        "ts": "2026-06-14T11:03:04.449616+00:00",
+        "ts": "2026-06-18T18:47:54.824376+00:00",
         "data": {
           "hits": 10
         }
       }
     },
     {
-      "tOffsetMs": 4940,
+      "tOffsetMs": 6749,
       "event": {
         "event": "stage_end",
         "stage": "process-direct",
-        "ts": "2026-06-14T11:03:04.449616+00:00",
+        "ts": "2026-06-18T18:47:54.824376+00:00",
         "data": {
           "unique_page_ids": 3
         }
       }
     },
     {
-      "tOffsetMs": 4941,
+      "tOffsetMs": 6749,
       "event": {
         "event": "stage_start",
         "stage": "expand-tax-hits",
-        "ts": "2026-06-14T11:03:04.449616+00:00",
+        "ts": "2026-06-18T18:47:54.824376+00:00",
         "data": {
           "tax_hits": 10
         }
       }
     },
     {
-      "tOffsetMs": 4941,
+      "tOffsetMs": 6749,
       "event": {
         "event": "stage_end",
         "stage": "expand-tax-hits",
-        "ts": "2026-06-14T11:03:04.874675+00:00",
+        "ts": "2026-06-18T18:47:55.246877+00:00",
         "data": {
           "expanded_page_ids": 9
         }
       }
     },
     {
-      "tOffsetMs": 4942,
+      "tOffsetMs": 6749,
       "event": {
         "event": "stage_start",
         "stage": "merge-results",
-        "ts": "2026-06-14T11:03:04.874675+00:00",
+        "ts": "2026-06-18T18:47:55.246877+00:00",
         "data": {
           "direct": 3,
           "taxonomy": 9
@@ -269,22 +269,22 @@
       }
     },
     {
-      "tOffsetMs": 4942,
+      "tOffsetMs": 6749,
       "event": {
         "event": "stage_end",
         "stage": "merge-results",
-        "ts": "2026-06-14T11:03:04.874675+00:00",
+        "ts": "2026-06-18T18:47:55.246877+00:00",
         "data": {
           "merged_page_ids": 9
         }
       }
     },
     {
-      "tOffsetMs": 4942,
+      "tOffsetMs": 6750,
       "event": {
         "event": "stage_start",
         "stage": "extract-tax-filters",
-        "ts": "2026-06-14T11:03:04.874675+00:00",
+        "ts": "2026-06-18T18:47:55.246877+00:00",
         "data": {
           "query": "trips to Brazil",
           "page_ids": 9
@@ -292,11 +292,11 @@
       }
     },
     {
-      "tOffsetMs": 9289,
+      "tOffsetMs": 8245,
       "event": {
         "event": "stage_end",
         "stage": "extract-tax-filters",
-        "ts": "2026-06-14T11:03:09.229021+00:00",
+        "ts": "2026-06-18T18:47:56.748635+00:00",
         "data": {
           "criteria": {
             "cities": {
@@ -305,17 +305,12 @@
             },
             "countries": {
               "include": [
-                "brasil",
                 "brazil"
               ],
               "exclude": []
             },
             "regions": {
-              "include": [
-                "américa",
-                "south america",
-                "sudamérica"
-              ],
+              "include": [],
               "exclude": []
             }
           }
@@ -323,11 +318,11 @@
       }
     },
     {
-      "tOffsetMs": 9291,
+      "tOffsetMs": 8247,
       "event": {
         "event": "stage_start",
         "stage": "filter-by-tax",
-        "ts": "2026-06-14T11:03:09.229021+00:00",
+        "ts": "2026-06-18T18:47:56.748635+00:00",
         "data": {
           "page_ids": 9,
           "criteria": {
@@ -337,17 +332,12 @@
             },
             "countries": {
               "include": [
-                "brasil",
                 "brazil"
               ],
               "exclude": []
             },
             "regions": {
-              "include": [
-                "américa",
-                "south america",
-                "sudamérica"
-              ],
+              "include": [],
               "exclude": []
             }
           }
@@ -355,25 +345,25 @@
       }
     },
     {
-      "tOffsetMs": 9338,
+      "tOffsetMs": 8295,
       "event": {
         "event": "stage_end",
         "stage": "filter-by-tax",
-        "ts": "2026-06-14T11:03:09.270273+00:00",
+        "ts": "2026-06-18T18:47:56.798563+00:00",
         "data": {
-          "surviving_page_ids": 2,
-          "dropped": 7
+          "surviving_page_ids": 3,
+          "dropped": 6
         }
       }
     },
     {
-      "tOffsetMs": 9339,
+      "tOffsetMs": 8298,
       "event": {
         "event": "stage_start",
         "stage": "apply-param-filters",
-        "ts": "2026-06-14T11:03:09.270273+00:00",
+        "ts": "2026-06-18T18:47:56.798563+00:00",
         "data": {
-          "page_ids": 2,
+          "page_ids": 3,
           "filters": {
             "duration_nights": {
               "min": null,
@@ -400,77 +390,81 @@
       }
     },
     {
-      "tOffsetMs": 9342,
+      "tOffsetMs": 8301,
       "event": {
         "event": "stage_end",
         "stage": "apply-param-filters",
-        "ts": "2026-06-14T11:03:09.270273+00:00",
+        "ts": "2026-06-18T18:47:56.798563+00:00",
         "data": {
-          "surviving_page_ids": 2,
+          "surviving_page_ids": 3,
           "dropped": 0
         }
       }
     },
     {
-      "tOffsetMs": 10336,
+      "tOffsetMs": 9297,
       "event": {
         "event": "stage_start",
         "stage": "fetch-details",
-        "ts": "2026-06-14T11:03:10.276790+00:00",
+        "ts": "2026-06-18T18:47:57.800423+00:00",
         "data": {
-          "page_ids": 2
+          "page_ids": 3
         }
       }
     },
     {
-      "tOffsetMs": 10510,
+      "tOffsetMs": 9559,
       "event": {
         "event": "stage_end",
         "stage": "fetch-details",
-        "ts": "2026-06-14T11:03:10.450495+00:00",
+        "ts": "2026-06-18T18:47:58.063376+00:00",
         "data": {
-          "enriched_results": 2,
+          "enriched_results": 3,
           "warnings": 0
         }
       }
     },
     {
-      "tOffsetMs": 10510,
+      "tOffsetMs": 9559,
       "event": {
         "event": "stage_start",
         "stage": "rank-format",
-        "ts": "2026-06-14T11:03:10.450495+00:00",
+        "ts": "2026-06-18T18:47:58.063376+00:00",
         "data": {
-          "results": 2
+          "results": 3
         }
       }
     },
     {
-      "tOffsetMs": 10511,
+      "tOffsetMs": 9561,
       "event": {
         "event": "stage_end",
         "stage": "rank-format",
-        "ts": "2026-06-14T11:03:10.450495+00:00",
+        "ts": "2026-06-18T18:47:58.063995+00:00",
         "data": {
-          "top_score": 0.585186422,
+          "top_score": 0.720520258,
           "ranked": [
             {
               "title": "Tres Destinos Top",
-              "score": 0.5852
+              "score": 0.7205
+            },
+            {
+              "title": "Rio de Janeiro Ciudad Maravillosa",
+              "score": 0.7205
             },
             {
               "title": "Mas Brasil Rio de Janeiro E Iguazu",
-              "score": 0.5852
+              "score": 0.7205
             }
           ]
         }
       }
     },
     {
-      "tOffsetMs": 10511,
+      "tOffsetMs": 9561,
       "event": {
         "event": "result",
-        "ts": "2026-06-14T11:03:10.450495+00:00",
+        "ts": "2026-06-18T18:47:58.064631+00:00",
         "data": {
           "status": "success",
           "query": "trips to Brazil",
@@ -479,7 +473,7 @@
               "id": "3383",
               "title": "Tres Destinos Top",
               "content": "This itinerary is a 9-day trip to Rio de Janeiro, Iguazú, and Buenos Aires. It includes airport transfers, guided tours, visits to iconic landmarks like Christ the Redeemer and Sugar Loaf, excursions to the Argentine and Brazilian Falls, a City Tour of Buenos Aires, and accommodation with breakfast included. The trip ends with a return flight to Mexico City.",
-              "score": 0.585186422,
+              "score": 0.720520258,
               "taxonomies": [
                 {
                   "taxonomy_name": "cities",
@@ -506,10 +500,30 @@
               ]
             },
             {
+              "id": "3434",
+              "title": "Rio de Janeiro Ciudad Maravillosa",
+              "content": "This itinerary is for a 6-day trip to Rio de Janeiro, Brazil. It includes a full day guided tour of Rio, visiting iconic landmarks like Christ the Redeemer and Sugar Loaf, as well as an excursion to Arraial do Cabo to explore the crystal-clear waters. The package also includes accommodation with breakfast, airport transfers, travel assistance insurance, and a checked suitcase. The trip ends with a return flight to Mexico City.",
+              "score": 0.720520258,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "rio de janeiro"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "brazil"
+                  ]
+                }
+              ]
+            },
+            {
               "id": "3436",
               "title": "Mas Brasil Rio de Janeiro E Iguazu",
               "content": "This itinerary is for an 8-day trip to Brazil, starting with flights from Mexico to Rio de Janeiro. The trip includes 3 nights in Rio with a full-day guided tour visiting iconic landmarks like Christ the Redeemer and Sugar Loaf. There is a free day for optional activities in Rio before flying to Foz do Iguazú for 3 nights. In Foz do Iguazú, there are excursions to both the Brazilian and Argentine sides of the Iguazu Falls. The trip ends with a flight back to Mexico City.",
-              "score": 0.585186422,
+              "score": 0.720520258,
               "taxonomies": [
                 {
                   "taxonomy_name": "cities",
@@ -533,7 +547,7 @@
               ]
             }
           ],
-          "processed_query": "trips to Brazil travel Brazil tourism Brazil vacations Brazil",
+          "processed_query": "Brazil travel South America vacation packages Brazilian culture tours Amazon rainforest Iguazu Falls Rio de Janeiro Carnival celebrations tropical beaches coastal destinations vibrant cities São Paulo Salvador Bahia",
           "processor_filters": {
             "duration_nights": {
               "min": null,
@@ -563,17 +577,12 @@
             },
             "countries": {
               "include": [
-                "brasil",
                 "brazil"
               ],
               "exclude": []
             },
             "regions": {
-              "include": [
-                "américa",
-                "south america",
-                "sudamérica"
-              ],
+              "include": [],
               "exclude": []
             }
           },
@@ -583,10 +592,10 @@
       }
     },
     {
-      "tOffsetMs": 10517,
+      "tOffsetMs": 9567,
       "event": {
         "event": "done",
-        "ts": "2026-06-14T11:03:10.452509+00:00"
+        "ts": "2026-06-18T18:47:58.065872+00:00"
       }
     }
   ]

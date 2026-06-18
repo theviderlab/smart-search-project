@@ -20,9 +20,9 @@
       "verify": "tax_exclude"
     },
     {
-      "label": "Iguazu Falls, under USD 8,000",
-      "query": "Iguazu trips in Brazil under 8000 dollars",
-      "file": "cataratas.json",
+      "label": "Cultural Argentina, under USD 4,000",
+      "query": "cultural city trips in Argentina under 4000 dollars",
+      "file": "argentina.json",
       "verify": "price,tax_include"
     }
   ]
