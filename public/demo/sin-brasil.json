@@ -1,14 +1,14 @@
 {
   "account": "Travel Demo",
   "query": "trips avoiding Brazil",
-  "recordedAt": "2026-06-18T18:48:10.304505+00:00",
+  "recordedAt": "2026-06-18T20:05:17.214872+00:00",
   "events": [
     {
       "tOffsetMs": 0,
       "event": {
         "event": "stage_start",
         "stage": "resolve-account",
-        "ts": "2026-06-18T18:48:02.112579+00:00",
+        "ts": "2026-06-18T20:05:01.113951+00:00",
         "data": {}
       }
     },
@@ -17,251 +17,231 @@
       "event": {
         "event": "stage_end",
         "stage": "resolve-account",
-        "ts": "2026-06-18T18:48:02.112579+00:00",
+        "ts": "2026-06-18T20:05:01.113951+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 3,
+      "tOffsetMs": 2,
       "event": {
         "event": "stage_start",
         "stage": "enhance-query",
-        "ts": "2026-06-18T18:48:02.112579+00:00",
+        "ts": "2026-06-18T20:05:01.113951+00:00",
         "data": {
           "query": "trips avoiding Brazil"
         }
       }
     },
     {
-      "tOffsetMs": 1300,
+      "tOffsetMs": 1265,
       "event": {
         "event": "stage_end",
         "stage": "enhance-query",
-        "ts": "2026-06-18T18:48:03.405632+00:00",
+        "ts": "2026-06-18T20:05:02.378199+00:00",
         "data": {
-          "processed_query": "South America travel vacation packages cultural tours nature experiences scenic destinations regional getaways Argentina Chile Peru Colombia Ecuador Uruguay Paraguay Bolivia"
+          "processed_query": "South America travel vacation packages cultural tours nature experiences scenic destinations regional getaways Argentina Chile Peru Colombia Ecuador Uruguay Paraguay Bolivia Guyana Suriname French Guiana"
         }
       }
     },
     {
-      "tOffsetMs": 1303,
+      "tOffsetMs": 1266,
       "event": {
         "event": "stage_start",
         "stage": "extract-filters",
-        "ts": "2026-06-18T18:48:03.405632+00:00",
+        "ts": "2026-06-18T20:05:02.378199+00:00",
         "data": {
           "query": "trips avoiding Brazil"
         }
       }
     },
     {
-      "tOffsetMs": 2356,
+      "tOffsetMs": 4517,
       "event": {
         "event": "stage_end",
         "stage": "extract-filters",
-        "ts": "2026-06-18T18:48:04.339485+00:00",
+        "ts": "2026-06-18T20:05:05.498519+00:00",
         "data": {
-          "processor_filters": {
-            "duration_nights": {
-              "min": null,
-              "max": null
-            },
-            "duration_days": {
-              "min": null,
-              "max": null
-            },
-            "starting_price": {
-              "min": null,
-              "max": null
-            },
-            "departure_dates": {
-              "include": [],
-              "exclude": []
-            },
-            "valid_until": {
-              "include": [],
-              "exclude": []
-            }
-          }
-        }
+          "processor_filters": {}
+        },
+        "warning": "Filter extraction error: Expecting value: line 1 column 1 (char 0)"
       }
     },
     {
-      "tOffsetMs": 2357,
+      "tOffsetMs": 4518,
       "event": {
         "event": "stage_start",
         "stage": "resolve-namespace",
-        "ts": "2026-06-18T18:48:04.339485+00:00",
+        "ts": "2026-06-18T20:05:05.498519+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 2358,
+      "tOffsetMs": 4521,
       "event": {
         "event": "stage_end",
         "stage": "resolve-namespace",
-        "ts": "2026-06-18T18:48:04.387669+00:00",
+        "ts": "2026-06-18T20:05:05.544933+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 2359,
+      "tOffsetMs": 4524,
       "event": {
         "event": "stage_start",
         "stage": "resolve-tax-namespace",
-        "ts": "2026-06-18T18:48:04.387669+00:00",
+        "ts": "2026-06-18T20:05:05.544933+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 2361,
+      "tOffsetMs": 4528,
       "event": {
         "event": "stage_end",
         "stage": "resolve-tax-namespace",
-        "ts": "2026-06-18T18:48:04.473264+00:00",
+        "ts": "2026-06-18T20:05:05.633322+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 2362,
+      "tOffsetMs": 4529,
       "event": {
         "event": "stage_start",
         "stage": "pinecone-content",
-        "ts": "2026-06-18T18:48:04.473264+00:00",
+        "ts": "2026-06-18T20:05:05.633322+00:00",
         "data": {
-          "query": "South America travel vacation packages cultural tours nature experiences scenic destinations regional getaways Argentina Chile Peru Colombia Ecuador Uruguay Paraguay Bolivia",
+          "query": "South America travel vacation packages cultural tours nature experiences scenic destinations regional getaways Argentina Chile Peru Colombia Ecuador Uruguay Paraguay Bolivia Guyana Suriname French Guiana",
           "k": 10
         }
       }
     },
     {
-      "tOffsetMs": 2362,
+      "tOffsetMs": 4532,
       "event": {
         "event": "stage_start",
         "stage": "pinecone-taxonomy",
-        "ts": "2026-06-18T18:48:04.473264+00:00",
+        "ts": "2026-06-18T20:05:05.636943+00:00",
         "data": {
-          "query": "South America travel vacation packages cultural tours nature experiences scenic destinations regional getaways Argentina Chile Peru Colombia Ecuador Uruguay Paraguay Bolivia",
+          "query": "South America travel vacation packages cultural tours nature experiences scenic destinations regional getaways Argentina Chile Peru Colombia Ecuador Uruguay Paraguay Bolivia Guyana Suriname French Guiana",
           "k": 10
         }
       }
     },
     {
-      "tOffsetMs": 3620,
+      "tOffsetMs": 6027,
+      "event": {
+        "event": "stage_end",
+        "stage": "pinecone-content",
+        "ts": "2026-06-18T20:05:07.144765+00:00",
+        "data": {
+          "hits": 10,
+          "top_matches": [
+            {
+              "match": "The tour package \"Tres Destinos Top\" includes visits to three popular destinatio",
+              "score": 0.6204
+            },
+            {
+              "match": "The main purpose of the tour package \"Dos países por uno: Argentina y Uruguay\" i",
+              "score": 0.6033
+            },
+            {
+              "match": "This tour package titled \"Dos países por uno: Argentina y Uruguay\" includes visi",
+              "score": 0.5985
+            },
+            {
+              "match": "The main purpose of the \"Tres Destinos Top\" tour package is a combination of cul",
+              "score": 0.58
+            },
+            {
+              "match": "The main purpose of the tour package \"Buenos Aires y Santiago\" is to offer a cul",
+              "score": 0.5754
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tOffsetMs": 6516,
       "event": {
         "event": "stage_end",
         "stage": "pinecone-taxonomy",
-        "ts": "2026-06-18T18:48:05.741655+00:00",
+        "ts": "2026-06-18T20:05:07.208503+00:00",
         "data": {
           "hits": 10,
           "top_matches": [
             {
               "match": "Taxonomy type: Travel Destination Taxonomy description: Geographic Regions Value",
-              "score": 0.5855
-            },
-            {
-              "match": "Argentina is a South American country known for its diverse landscapes, includin",
-              "score": 0.5746
+              "score": 0.5721
             },
             {
               "match": "Uruguay, a country nestled in South America, boasts a diverse geography characte",
-              "score": 0.5601
+              "score": 0.5498
+            },
+            {
+              "match": "Argentina is a South American country known for its diverse landscapes, includin",
+              "score": 0.5327
             },
             {
               "match": "Uruguay is a South American country known for its beautiful beaches, vibrant cul",
-              "score": 0.532
+              "score": 0.5143
             },
             {
-              "match": "Chile is a South American country known for its diverse landscapes, stretching a",
-              "score": 0.4957
+              "match": "Brazil, situated in South America, is a diverse and vibrant country known for it",
+              "score": 0.4755
             }
           ]
         }
       }
     },
     {
-      "tOffsetMs": 4204,
-      "event": {
-        "event": "stage_end",
-        "stage": "pinecone-content",
-        "ts": "2026-06-18T18:48:05.905795+00:00",
-        "data": {
-          "hits": 10,
-          "top_matches": [
-            {
-              "match": "The main purpose of the tour package \"Dos países por uno: Argentina y Uruguay\" i",
-              "score": 0.6499
-            },
-            {
-              "match": "This tour package titled \"Dos países por uno: Argentina y Uruguay\" includes visi",
-              "score": 0.6372
-            },
-            {
-              "match": "The tour package \"Tres Destinos Top\" includes visits to three popular destinatio",
-              "score": 0.634
-            },
-            {
-              "match": "The main purpose of the tour package \"Buenos Aires y Santiago\" is to offer a cul",
-              "score": 0.6202
-            },
-            {
-              "match": "The tour package \"Buenos Aires y Santiago\" includes a visit to two vibrant desti",
-              "score": 0.6105
-            }
-          ]
-        }
-      }
-    },
-    {
-      "tOffsetMs": 4208,
+      "tOffsetMs": 6517,
       "event": {
         "event": "stage_start",
         "stage": "process-direct",
-        "ts": "2026-06-18T18:48:05.905795+00:00",
+        "ts": "2026-06-18T20:05:07.208503+00:00",
         "data": {
           "hits": 10
         }
       }
     },
     {
-      "tOffsetMs": 4208,
+      "tOffsetMs": 6517,
       "event": {
         "event": "stage_end",
         "stage": "process-direct",
-        "ts": "2026-06-18T18:48:05.905795+00:00",
+        "ts": "2026-06-18T20:05:07.208503+00:00",
         "data": {
           "unique_page_ids": 3
         }
       }
     },
     {
-      "tOffsetMs": 4208,
+      "tOffsetMs": 6518,
       "event": {
         "event": "stage_start",
         "stage": "expand-tax-hits",
-        "ts": "2026-06-18T18:48:05.905795+00:00",
+        "ts": "2026-06-18T20:05:07.208503+00:00",
         "data": {
           "tax_hits": 10
         }
       }
     },
     {
-      "tOffsetMs": 4209,
+      "tOffsetMs": 6518,
       "event": {
         "event": "stage_end",
         "stage": "expand-tax-hits",
-        "ts": "2026-06-18T18:48:06.321538+00:00",
+        "ts": "2026-06-18T20:05:07.632947+00:00",
         "data": {
           "expanded_page_ids": 9
         }
       }
     },
     {
-      "tOffsetMs": 4209,
+      "tOffsetMs": 6518,
       "event": {
         "event": "stage_start",
         "stage": "merge-results",
-        "ts": "2026-06-18T18:48:06.321538+00:00",
+        "ts": "2026-06-18T20:05:07.632947+00:00",
         "data": {
           "direct": 3,
           "taxonomy": 9
@@ -269,22 +249,22 @@
       }
     },
     {
-      "tOffsetMs": 4209,
+      "tOffsetMs": 6518,
       "event": {
         "event": "stage_end",
         "stage": "merge-results",
-        "ts": "2026-06-18T18:48:06.321538+00:00",
+        "ts": "2026-06-18T20:05:07.632947+00:00",
         "data": {
           "merged_page_ids": 9
         }
       }
     },
     {
-      "tOffsetMs": 4209,
+      "tOffsetMs": 6518,
       "event": {
         "event": "stage_start",
         "stage": "extract-tax-filters",
-        "ts": "2026-06-18T18:48:06.321538+00:00",
+        "ts": "2026-06-18T20:05:07.632947+00:00",
         "data": {
           "query": "trips avoiding Brazil",
           "page_ids": 9
@@ -292,11 +272,11 @@
       }
     },
     {
-      "tOffsetMs": 6680,
+      "tOffsetMs": 14604,
       "event": {
         "event": "stage_end",
         "stage": "extract-tax-filters",
-        "ts": "2026-06-18T18:48:08.801706+00:00",
+        "ts": "2026-06-18T20:05:15.722861+00:00",
         "data": {
           "criteria": {
             "cities": {
@@ -319,11 +299,11 @@
       }
     },
     {
-      "tOffsetMs": 6681,
+      "tOffsetMs": 14607,
       "event": {
         "event": "stage_start",
         "stage": "filter-by-tax",
-        "ts": "2026-06-18T18:48:08.801706+00:00",
+        "ts": "2026-06-18T20:05:15.722861+00:00",
         "data": {
           "page_ids": 9,
           "criteria": {
@@ -347,11 +327,11 @@
       }
     },
     {
-      "tOffsetMs": 6729,
+      "tOffsetMs": 14656,
       "event": {
         "event": "stage_end",
         "stage": "filter-by-tax",
-        "ts": "2026-06-18T18:48:08.850422+00:00",
+        "ts": "2026-06-18T20:05:15.773365+00:00",
         "data": {
           "surviving_page_ids": 5,
           "dropped": 4
@@ -359,44 +339,23 @@
       }
     },
     {
-      "tOffsetMs": 6730,
+      "tOffsetMs": 14658,
       "event": {
         "event": "stage_start",
         "stage": "apply-param-filters",
-        "ts": "2026-06-18T18:48:08.850422+00:00",
+        "ts": "2026-06-18T20:05:15.773365+00:00",
         "data": {
           "page_ids": 5,
-          "filters": {
-            "duration_nights": {
-              "min": null,
-              "max": null
-            },
-            "duration_days": {
-              "min": null,
-              "max": null
-            },
-            "starting_price": {
-              "min": null,
-              "max": null
-            },
-            "departure_dates": {
-              "include": [],
-              "exclude": []
-            },
-            "valid_until": {
-              "include": [],
-              "exclude": []
-            }
-          }
+          "filters": {}
         }
       }
     },
     {
-      "tOffsetMs": 6731,
+      "tOffsetMs": 14662,
       "event": {
         "event": "stage_end",
         "stage": "apply-param-filters",
-        "ts": "2026-06-18T18:48:08.850422+00:00",
+        "ts": "2026-06-18T20:05:15.776518+00:00",
         "data": {
           "surviving_page_ids": 5,
           "dropped": 0
@@ -404,22 +363,22 @@
       }
     },
     {
-      "tOffsetMs": 7734,
+      "tOffsetMs": 15655,
       "event": {
         "event": "stage_start",
         "stage": "fetch-details",
-        "ts": "2026-06-18T18:48:09.854574+00:00",
+        "ts": "2026-06-18T20:05:16.774475+00:00",
         "data": {
           "page_ids": 5
         }
       }
     },
     {
-      "tOffsetMs": 8190,
+      "tOffsetMs": 16091,
       "event": {
         "event": "stage_end",
         "stage": "fetch-details",
-        "ts": "2026-06-18T18:48:10.304505+00:00",
+        "ts": "2026-06-18T20:05:17.208975+00:00",
         "data": {
           "enriched_results": 5,
           "warnings": 0
@@ -427,54 +386,54 @@
       }
     },
     {
-      "tOffsetMs": 8190,
+      "tOffsetMs": 16091,
       "event": {
         "event": "stage_start",
         "stage": "rank-format",
-        "ts": "2026-06-18T18:48:10.304505+00:00",
+        "ts": "2026-06-18T20:05:17.208975+00:00",
         "data": {
           "results": 5
         }
       }
     },
     {
-      "tOffsetMs": 8190,
+      "tOffsetMs": 16092,
       "event": {
         "event": "stage_end",
         "stage": "rank-format",
-        "ts": "2026-06-18T18:48:10.304505+00:00",
+        "ts": "2026-06-18T20:05:17.208975+00:00",
         "data": {
-          "top_score": 0.61908444175,
+          "top_score": 0.5879581086666666,
           "ranked": [
             {
               "title": "Dos Paises Por Uno Argentina y Uruguay",
-              "score": 0.6191
-            },
-            {
-              "title": "Buenos Aires y Santiago",
-              "score": 0.6054
+              "score": 0.588
             },
             {
               "title": "Patagonia Infinita Buenos Aires y Calafate",
-              "score": 0.5855
+              "score": 0.5721
             },
             {
               "title": "Colombia con Encanto",
-              "score": 0.5855
+              "score": 0.5721
             },
             {
               "title": "Glamping en Peru",
-              "score": 0.5855
+              "score": 0.5721
+            },
+            {
+              "title": "Buenos Aires y Santiago",
+              "score": 0.5629
             }
           ]
         }
       }
     },
     {
-      "tOffsetMs": 8191,
+      "tOffsetMs": 16093,
       "event": {
         "event": "result",
-        "ts": "2026-06-18T18:48:10.304505+00:00",
+        "ts": "2026-06-18T20:05:17.208975+00:00",
         "data": {
           "status": "success",
           "query": "trips avoiding Brazil",
@@ -483,7 +442,7 @@
               "id": "3382",
               "title": "Dos Paises Por Uno Argentina y Uruguay",
               "content": "This 8-day trip to Argentina and Uruguay includes flights from Mexico to Buenos Aires and Montevideo, airport transfers, a city tour of Buenos Aires, a tango dinner show, a visit to Colonia del Sacramento, a city tour of Montevideo, an excursion to Punta del Este, and more. The itinerary involves exploring key attractions in both cities, enjoying cultural experiences, and discovering the natural beauty of the region. The trip ends with a flight back to Mexico.",
-              "score": 0.61908444175,
+              "score": 0.5879581086666666,
               "taxonomies": [
                 {
                   "taxonomy_name": "cities",
@@ -510,40 +469,10 @@
               ]
             },
             {
-              "id": "3380",
-              "title": "Buenos Aires y Santiago",
-              "content": "The \"Buenos Aires and Santiago\" itinerary is an 8-day/6-night trip that includes airfare from Mexico to Buenos Aires and Santiago, airport transfers, city tours in Buenos Aires and Santiago, an excursion to Viña del Mar and Valparaíso, accommodation with breakfast, and AC35 travel assistance insurance. The trip begins with 3 nights in Buenos Aires, exploring the city's main attractions and enjoying a free day. Then, travelers will fly to Santiago for 3 nights, with a city tour exploring historical and modern landmarks, followed by a day trip to Valparaíso and Viña del Mar. The trip concludes with a flight back to Mexico City.",
-              "score": 0.6054409746666667,
-              "taxonomies": [
-                {
-                  "taxonomy_name": "cities",
-                  "values": [
-                    "buenos aires",
-                    "santiago",
-                    "valparaíso",
-                    "viña del mar"
-                  ]
-                },
-                {
-                  "taxonomy_name": "countries",
-                  "values": [
-                    "argentina",
-                    "chile"
-                  ]
-                },
-                {
-                  "taxonomy_name": "regions",
-                  "values": [
-                    "south america"
-                  ]
-                }
-              ]
-            },
-            {
               "id": "3381",
               "title": "Patagonia Infinita Buenos Aires y Calafate",
               "content": "The \"Endless Patagonia: Buenos Aires and Calafate\" package includes a trip spanning 8 days and 6 nights. The itinerary consists of flights from Mexico to Buenos Aires and Calafate, airport transfers, accommodation in both cities, a panoramic City Tour of Buenos Aires, an excursion to the Perito Moreno Glacier, travel insurance, and checked luggage allowances. Here is a summary of the main activities for each day:\n\n- Day 01: Travel from Mexico to Buenos Aires.\n- Day 02: Arrival in Buenos Aires, transfer to the hotel.\n- Day 03: Panoramic City Tour of Buenos Aires, visiting various landmarks.\n- Day 04: Free day for optional activities in Buenos Aires.\n- Day 05: Flight to Calafate, transfer to the hotel.\n- Day 06: Excursion to the Perito Moreno Glacier, exploring the park and glacier.\n- Day 07: Return to Buenos Aires from Calafate.\n- Day 08: Transfer to the airport for the return flight to Mexico City.\n\nThroughout the trip, travelers will experience the culture, history, and natural beauty of Buenos Aires and Calafate, with opportunities for exploration and relaxation.",
-              "score": 0.585496187,
+              "score": 0.572129905,
               "taxonomies": [
                 {
                   "taxonomy_name": "cities",
@@ -572,7 +501,7 @@
               "id": "3430",
               "title": "Colombia con Encanto",
               "content": "The \"Charming Colombia\" itinerary includes a 9-day trip with 8 nights of accommodation. The main activities planned for each day are as follows:\n\n- Day 1: Arrival in Bogotá, transfer to the hotel\n- Day 2: City tour of Bogotá, including a visit to the Gold Museum\n- Day 3: Flight to Cartagena, transfer to the hotel\n- Day 4: City tour of Cartagena, visit to San Felipe Castle\n- Day 5: Free day in Cartagena for optional activities\n- Day 6: Transfer to Santa Marta, panoramic city tour\n- Day 7: City tour of Santa Marta, visit to Quinta de San Pedro Alejandrino\n- Day 8: Free day in Santa Marta for personal activities\n- Day 9: Transfer to the airport for the flight back to Mexico City.",
-              "score": 0.585496187,
+              "score": 0.572129905,
               "taxonomies": [
                 {
                   "taxonomy_name": "cities",
@@ -600,7 +529,7 @@
               "id": "3439",
               "title": "Glamping en Peru",
               "content": "The \"Glamping in Peru\" package is an 8-day/7-night itinerary that includes:\n\n- Day 1: Arrival in Lima, transfer to hotel.\n- Day 2: City Tour of Lima and visit to Larco Museum.\n- Day 3: Flight to Cusco, City Tour of Cusco.\n- Day 4: Excursion to Sacsayhuamán Archaeological Park.\n- Day 5: Excursion to Sacred Valley with lunch, visit to Ollantaytambo.\n- Day 6: Free day in Ollantaytambo for optional experiences.\n- Day 7: Excursion to Machu Picchu with lunch.\n- Day 8: Return to Lima and flight back to Mexico.\n\nThe package includes accommodation, flights, train tickets to Machu Picchu, city tours, meals, and travel insurance. Accommodations range from hotels to a glamping experience in Ollantaytambo. The itinerary offers a mix of historical, cultural, and natural experiences in Peru.",
-              "score": 0.585496187,
+              "score": 0.572129905,
               "taxonomies": [
                 {
                   "taxonomy_name": "cities",
@@ -623,31 +552,40 @@
                   ]
                 }
               ]
+            },
+            {
+              "id": "3380",
+              "title": "Buenos Aires y Santiago",
+              "content": "The \"Buenos Aires and Santiago\" itinerary is an 8-day/6-night trip that includes airfare from Mexico to Buenos Aires and Santiago, airport transfers, city tours in Buenos Aires and Santiago, an excursion to Viña del Mar and Valparaíso, accommodation with breakfast, and AC35 travel assistance insurance. The trip begins with 3 nights in Buenos Aires, exploring the city's main attractions and enjoying a free day. Then, travelers will fly to Santiago for 3 nights, with a city tour exploring historical and modern landmarks, followed by a day trip to Valparaíso and Viña del Mar. The trip concludes with a flight back to Mexico City.",
+              "score": 0.5629349146666667,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "santiago",
+                    "valparaíso",
+                    "viña del mar"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina",
+                    "chile"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
             }
           ],
-          "processed_query": "South America travel vacation packages cultural tours nature experiences scenic destinations regional getaways Argentina Chile Peru Colombia Ecuador Uruguay Paraguay Bolivia",
-          "processor_filters": {
-            "duration_nights": {
-              "min": null,
-              "max": null
-            },
-            "duration_days": {
-              "min": null,
-              "max": null
-            },
-            "starting_price": {
-              "min": null,
-              "max": null
-            },
-            "departure_dates": {
-              "include": [],
-              "exclude": []
-            },
-            "valid_until": {
-              "include": [],
-              "exclude": []
-            }
-          },
+          "processed_query": "South America travel vacation packages cultural tours nature experiences scenic destinations regional getaways Argentina Chile Peru Colombia Ecuador Uruguay Paraguay Bolivia Guyana Suriname French Guiana",
+          "processor_filters": {},
           "taxonomy_filters": {
             "cities": {
               "include": [],
@@ -665,16 +603,18 @@
               "exclude": []
             }
           },
-          "warnings": null,
+          "warnings": [
+            "[FilterExtractor] Filter extraction failed: Filter extraction error: Expecting value: line 1 column 1 (char 0). Proceeding without filters."
+          ],
           "errors": null
         }
       }
     },
     {
-      "tOffsetMs": 8193,
+      "tOffsetMs": 16095,
       "event": {
         "event": "done",
-        "ts": "2026-06-18T18:48:10.304505+00:00"
+        "ts": "2026-06-18T20:05:17.212865+00:00"
       }
     }
   ]

@@ -20,8 +20,8 @@
       "verify": "tax_exclude"
     },
     {
-      "label": "Cultural Argentina, under USD 4,000",
-      "query": "cultural city trips in Argentina under 4000 dollars",
+      "label": "Argentina under USD 1,300",
+      "query": "trips to Argentina under 1300 dollars",
       "file": "argentina.json",
       "verify": "price,tax_include"
     }

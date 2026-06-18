@@ -1,65 +1,65 @@
 {
   "account": "Travel Demo",
-  "query": "cultural city trips in Argentina under 4000 dollars",
-  "recordedAt": "2026-06-18T18:48:50.179273+00:00",
+  "query": "trips to Argentina under 1300 dollars",
+  "recordedAt": "2026-06-18T20:05:32.847254+00:00",
   "events": [
     {
       "tOffsetMs": 0,
       "event": {
         "event": "stage_start",
         "stage": "resolve-account",
-        "ts": "2026-06-18T18:48:37.029131+00:00",
-        "data": {}
-      }
-    },
-    {
-      "tOffsetMs": 0,
-      "event": {
-        "event": "stage_end",
-        "stage": "resolve-account",
-        "ts": "2026-06-18T18:48:37.029131+00:00",
+        "ts": "2026-06-18T20:05:21.269319+00:00",
         "data": {}
       }
     },
     {
       "tOffsetMs": 1,
       "event": {
+        "event": "stage_end",
+        "stage": "resolve-account",
+        "ts": "2026-06-18T20:05:21.269319+00:00",
+        "data": {}
+      }
+    },
+    {
+      "tOffsetMs": 2,
+      "event": {
         "event": "stage_start",
         "stage": "enhance-query",
-        "ts": "2026-06-18T18:48:37.029131+00:00",
+        "ts": "2026-06-18T20:05:21.269319+00:00",
         "data": {
-          "query": "cultural city trips in Argentina under 4000 dollars"
+          "query": "trips to Argentina under 1300 dollars"
         }
       }
     },
     {
-      "tOffsetMs": 5558,
+      "tOffsetMs": 1604,
       "event": {
         "event": "stage_end",
         "stage": "enhance-query",
-        "ts": "2026-06-18T18:48:42.581055+00:00",
+        "ts": "2026-06-18T20:05:22.871203+00:00",
         "data": {
-          "processed_query": "cultural city breaks Argentina affordable travel Buenos Aires Cordoba Mendoza Argentine heritage tours historical landmarks local arts traditions immersive cultural experience South American urban getaways budget travel packages"
+          "processed_query": "Argentina travel affordable vacation packages South America tours Buenos Aires Iguazu Falls Patagonia cultural heritage scenic landscapes wine country Mendoza adventure travel budget friendly destinations"
         }
       }
     },
     {
-      "tOffsetMs": 5558,
+      "tOffsetMs": 1605,
       "event": {
         "event": "stage_start",
         "stage": "extract-filters",
-        "ts": "2026-06-18T18:48:42.581055+00:00",
+        "ts": "2026-06-18T20:05:22.871203+00:00",
         "data": {
-          "query": "cultural city trips in Argentina under 4000 dollars"
+          "query": "trips to Argentina under 1300 dollars"
         }
       }
     },
     {
-      "tOffsetMs": 8008,
+      "tOffsetMs": 4585,
       "event": {
         "event": "stage_end",
         "stage": "extract-filters",
-        "ts": "2026-06-18T18:48:44.885568+00:00",
+        "ts": "2026-06-18T20:05:25.724693+00:00",
         "data": {
           "processor_filters": {
             "duration_nights": {
@@ -72,7 +72,7 @@
             },
             "starting_price": {
               "min": null,
-              "max": 4000.0
+              "max": 1300.0
             },
             "departure_dates": {
               "include": [],
@@ -87,216 +87,216 @@
       }
     },
     {
-      "tOffsetMs": 8008,
+      "tOffsetMs": 4585,
       "event": {
         "event": "stage_start",
         "stage": "resolve-namespace",
-        "ts": "2026-06-18T18:48:44.885568+00:00",
+        "ts": "2026-06-18T20:05:25.724693+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 8011,
+      "tOffsetMs": 4588,
       "event": {
         "event": "stage_end",
         "stage": "resolve-namespace",
-        "ts": "2026-06-18T18:48:44.949763+00:00",
+        "ts": "2026-06-18T20:05:25.766972+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 8011,
+      "tOffsetMs": 4590,
       "event": {
         "event": "stage_start",
         "stage": "resolve-tax-namespace",
-        "ts": "2026-06-18T18:48:44.949763+00:00",
+        "ts": "2026-06-18T20:05:25.766972+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 8014,
+      "tOffsetMs": 4591,
       "event": {
         "event": "stage_end",
         "stage": "resolve-tax-namespace",
-        "ts": "2026-06-18T18:48:45.037587+00:00",
+        "ts": "2026-06-18T20:05:25.852684+00:00",
         "data": {}
       }
     },
     {
-      "tOffsetMs": 8014,
+      "tOffsetMs": 4592,
       "event": {
         "event": "stage_start",
         "stage": "pinecone-content",
-        "ts": "2026-06-18T18:48:45.037587+00:00",
+        "ts": "2026-06-18T20:05:25.852684+00:00",
         "data": {
-          "query": "cultural city breaks Argentina affordable travel Buenos Aires Cordoba Mendoza Argentine heritage tours historical landmarks local arts traditions immersive cultural experience South American urban getaways budget travel packages",
+          "query": "Argentina travel affordable vacation packages South America tours Buenos Aires Iguazu Falls Patagonia cultural heritage scenic landscapes wine country Mendoza adventure travel budget friendly destinations",
           "k": 10
         }
       }
     },
     {
-      "tOffsetMs": 8018,
+      "tOffsetMs": 4595,
       "event": {
         "event": "stage_start",
         "stage": "pinecone-taxonomy",
-        "ts": "2026-06-18T18:48:45.037587+00:00",
+        "ts": "2026-06-18T20:05:25.852684+00:00",
         "data": {
-          "query": "cultural city breaks Argentina affordable travel Buenos Aires Cordoba Mendoza Argentine heritage tours historical landmarks local arts traditions immersive cultural experience South American urban getaways budget travel packages",
+          "query": "Argentina travel affordable vacation packages South America tours Buenos Aires Iguazu Falls Patagonia cultural heritage scenic landscapes wine country Mendoza adventure travel budget friendly destinations",
           "k": 10
         }
       }
     },
     {
-      "tOffsetMs": 9320,
+      "tOffsetMs": 6048,
       "event": {
         "event": "stage_end",
         "stage": "pinecone-taxonomy",
-        "ts": "2026-06-18T18:48:46.350782+00:00",
+        "ts": "2026-06-18T20:05:27.308312+00:00",
         "data": {
           "hits": 10,
           "top_matches": [
             {
-              "match": "Buenos Aires is a vibrant city in Argentina known for its rich culture, bustling",
-              "score": 0.6456
-            },
-            {
               "match": "Argentina is a South American country known for its diverse landscapes, includin",
-              "score": 0.6401
+              "score": 0.6706
             },
             {
-              "match": "Buenos Aires is a vibrant city known for its rich architectural heritage, blendi",
-              "score": 0.6125
-            },
-            {
-              "match": "Buenos Aires is a vibrant city known for its eclectic culinary scene, featuring ",
-              "score": 0.5827
+              "match": "Buenos Aires is a vibrant city in Argentina known for its rich culture, bustling",
+              "score": 0.5554
             },
             {
               "match": "Argentina is a country rich in cultural identity and historical heritage. Its na",
-              "score": 0.5727
+              "score": 0.5299
+            },
+            {
+              "match": "Buenos Aires is a vibrant city known for its eclectic culinary scene, featuring ",
+              "score": 0.506
+            },
+            {
+              "match": "Taxonomy type: Travel Destination Taxonomy description: Geographic Regions Value",
+              "score": 0.4983
             }
           ]
         }
       }
     },
     {
-      "tOffsetMs": 9776,
+      "tOffsetMs": 6478,
       "event": {
         "event": "stage_end",
         "stage": "pinecone-content",
-        "ts": "2026-06-18T18:48:46.384107+00:00",
+        "ts": "2026-06-18T20:05:27.308312+00:00",
         "data": {
           "hits": 10,
           "top_matches": [
             {
-              "match": "The main purpose of the tour package \"Buenos Aires y Santiago\" is to offer a cul",
-              "score": 0.6464
+              "match": "The \"Tres Destinos Top\" tour package includes a 9-day trip to Rio de Janeiro, Ig",
+              "score": 0.6253
             },
             {
-              "match": "The tour package \"Buenos Aires y Santiago\" includes a visit to two vibrant desti",
-              "score": 0.6349
-            },
-            {
-              "match": "This tour package titled \"Dos países por uno: Argentina y Uruguay\" includes visi",
-              "score": 0.6104
-            },
-            {
-              "match": "The main purpose of the tour package \"Dos países por uno: Argentina y Uruguay\" i",
-              "score": 0.6009
+              "match": "The tour package \"Tres Destinos Top\" includes visits to three popular destinatio",
+              "score": 0.6235
             },
             {
               "match": "The \"Buenos Aires and Santiago\" tour package includes roundtrip flights from Mex",
-              "score": 0.5979
+              "score": 0.6221
+            },
+            {
+              "match": "The \"Patagonia Infinita: Buenos Aires y Calafate\" tour package includes round-tr",
+              "score": 0.6187
+            },
+            {
+              "match": "This tour package, \"Patagonia Infinita: Buenos Aires y Calafate,\" includes visit",
+              "score": 0.6161
             }
           ]
         }
       }
     },
     {
-      "tOffsetMs": 9777,
+      "tOffsetMs": 6478,
       "event": {
         "event": "stage_start",
         "stage": "process-direct",
-        "ts": "2026-06-18T18:48:46.384107+00:00",
+        "ts": "2026-06-18T20:05:27.308312+00:00",
         "data": {
           "hits": 10
         }
       }
     },
     {
-      "tOffsetMs": 9777,
+      "tOffsetMs": 6478,
       "event": {
         "event": "stage_end",
         "stage": "process-direct",
-        "ts": "2026-06-18T18:48:46.384107+00:00",
+        "ts": "2026-06-18T20:05:27.308312+00:00",
         "data": {
           "unique_page_ids": 4
         }
       }
     },
     {
-      "tOffsetMs": 9778,
+      "tOffsetMs": 6478,
       "event": {
         "event": "stage_start",
         "stage": "expand-tax-hits",
-        "ts": "2026-06-18T18:48:46.384107+00:00",
+        "ts": "2026-06-18T20:05:27.308312+00:00",
         "data": {
           "tax_hits": 10
         }
       }
     },
     {
-      "tOffsetMs": 9778,
+      "tOffsetMs": 6478,
       "event": {
         "event": "stage_end",
         "stage": "expand-tax-hits",
-        "ts": "2026-06-18T18:48:46.807553+00:00",
+        "ts": "2026-06-18T20:05:27.747412+00:00",
         "data": {
-          "expanded_page_ids": 9
+          "expanded_page_ids": 8
         }
       }
     },
     {
-      "tOffsetMs": 9778,
+      "tOffsetMs": 6479,
       "event": {
         "event": "stage_start",
         "stage": "merge-results",
-        "ts": "2026-06-18T18:48:46.807553+00:00",
+        "ts": "2026-06-18T20:05:27.747412+00:00",
         "data": {
           "direct": 4,
-          "taxonomy": 9
+          "taxonomy": 8
         }
       }
     },
     {
-      "tOffsetMs": 9778,
+      "tOffsetMs": 6479,
       "event": {
         "event": "stage_end",
         "stage": "merge-results",
-        "ts": "2026-06-18T18:48:46.807553+00:00",
+        "ts": "2026-06-18T20:05:27.747412+00:00",
         "data": {
-          "merged_page_ids": 9
+          "merged_page_ids": 8
         }
       }
     },
     {
-      "tOffsetMs": 9778,
+      "tOffsetMs": 6479,
       "event": {
         "event": "stage_start",
         "stage": "extract-tax-filters",
-        "ts": "2026-06-18T18:48:46.807553+00:00",
+        "ts": "2026-06-18T20:05:27.747412+00:00",
         "data": {
-          "query": "cultural city trips in Argentina under 4000 dollars",
-          "page_ids": 9
+          "query": "trips to Argentina under 1300 dollars",
+          "page_ids": 8
         }
       }
     },
     {
-      "tOffsetMs": 11510,
+      "tOffsetMs": 10048,
       "event": {
         "event": "stage_end",
         "stage": "extract-tax-filters",
-        "ts": "2026-06-18T18:48:48.533548+00:00",
+        "ts": "2026-06-18T20:05:31.311178+00:00",
         "data": {
           "criteria": {
             "cities": {
@@ -318,13 +318,13 @@
       }
     },
     {
-      "tOffsetMs": 11511,
+      "tOffsetMs": 10049,
       "event": {
         "event": "stage_start",
         "stage": "filter-by-tax",
-        "ts": "2026-06-18T18:48:48.533548+00:00",
+        "ts": "2026-06-18T20:05:31.311178+00:00",
         "data": {
-          "page_ids": 9,
+          "page_ids": 8,
           "criteria": {
             "cities": {
               "include": [],
@@ -345,23 +345,23 @@
       }
     },
     {
-      "tOffsetMs": 11571,
+      "tOffsetMs": 10096,
       "event": {
         "event": "stage_end",
         "stage": "filter-by-tax",
-        "ts": "2026-06-18T18:48:48.599528+00:00",
+        "ts": "2026-06-18T20:05:31.359958+00:00",
         "data": {
           "surviving_page_ids": 5,
-          "dropped": 4
+          "dropped": 3
         }
       }
     },
     {
-      "tOffsetMs": 11575,
+      "tOffsetMs": 10098,
       "event": {
         "event": "stage_start",
         "stage": "apply-param-filters",
-        "ts": "2026-06-18T18:48:48.600292+00:00",
+        "ts": "2026-06-18T20:05:31.359958+00:00",
         "data": {
           "page_ids": 5,
           "filters": {
@@ -375,7 +375,7 @@
             },
             "starting_price": {
               "min": null,
-              "max": 4000.0
+              "max": 1300.0
             },
             "departure_dates": {
               "include": [],
@@ -390,98 +390,124 @@
       }
     },
     {
-      "tOffsetMs": 11726,
+      "tOffsetMs": 10235,
       "event": {
         "event": "stage_end",
         "stage": "apply-param-filters",
-        "ts": "2026-06-18T18:48:48.754527+00:00",
+        "ts": "2026-06-18T20:05:31.493051+00:00",
         "data": {
-          "surviving_page_ids": 5,
-          "dropped": 0
+          "surviving_page_ids": 4,
+          "dropped": 1
         }
       }
     },
     {
-      "tOffsetMs": 12702,
+      "tOffsetMs": 11224,
       "event": {
         "event": "stage_start",
         "stage": "fetch-details",
-        "ts": "2026-06-18T18:48:49.733093+00:00",
+        "ts": "2026-06-18T20:05:32.494042+00:00",
         "data": {
-          "page_ids": 5
+          "page_ids": 4
         }
       }
     },
     {
-      "tOffsetMs": 13144,
+      "tOffsetMs": 11576,
       "event": {
         "event": "stage_end",
         "stage": "fetch-details",
-        "ts": "2026-06-18T18:48:50.171440+00:00",
+        "ts": "2026-06-18T20:05:32.835127+00:00",
         "data": {
-          "enriched_results": 5,
+          "enriched_results": 4,
           "warnings": 0
         }
       }
     },
     {
-      "tOffsetMs": 13145,
+      "tOffsetMs": 11577,
       "event": {
         "event": "stage_start",
         "stage": "rank-format",
-        "ts": "2026-06-18T18:48:50.171440+00:00",
+        "ts": "2026-06-18T20:05:32.835127+00:00",
         "data": {
-          "results": 5
+          "results": 4
         }
       }
     },
     {
-      "tOffsetMs": 13145,
+      "tOffsetMs": 11580,
       "event": {
         "event": "stage_end",
         "stage": "rank-format",
-        "ts": "2026-06-18T18:48:50.171440+00:00",
+        "ts": "2026-06-18T20:05:32.847254+00:00",
         "data": {
-          "top_score": 0.64561218,
+          "top_score": 0.670640528,
           "ranked": [
             {
+              "title": "Buenos Aires y Santiago",
+              "score": 0.6706
+            },
+            {
               "title": "Patagonia Infinita Buenos Aires y Calafate",
-              "score": 0.6456
+              "score": 0.6706
             },
             {
               "title": "Dos Paises Por Uno Argentina y Uruguay",
-              "score": 0.6456
-            },
-            {
-              "title": "Tres Destinos Top",
-              "score": 0.6456
+              "score": 0.6706
             },
             {
               "title": "Buenos Aires y Rio de Janeiro",
-              "score": 0.6456
-            },
-            {
-              "title": "Buenos Aires y Santiago",
-              "score": 0.6264
+              "score": 0.6706
             }
           ]
         }
       }
     },
     {
-      "tOffsetMs": 13146,
+      "tOffsetMs": 11581,
       "event": {
         "event": "result",
-        "ts": "2026-06-18T18:48:50.171440+00:00",
+        "ts": "2026-06-18T20:05:32.847254+00:00",
         "data": {
           "status": "success",
-          "query": "cultural city trips in Argentina under 4000 dollars",
+          "query": "trips to Argentina under 1300 dollars",
           "results": [
+            {
+              "id": "3380",
+              "title": "Buenos Aires y Santiago",
+              "content": "The \"Buenos Aires and Santiago\" itinerary is an 8-day/6-night trip that includes airfare from Mexico to Buenos Aires and Santiago, airport transfers, city tours in Buenos Aires and Santiago, an excursion to Viña del Mar and Valparaíso, accommodation with breakfast, and AC35 travel assistance insurance. The trip begins with 3 nights in Buenos Aires, exploring the city's main attractions and enjoying a free day. Then, travelers will fly to Santiago for 3 nights, with a city tour exploring historical and modern landmarks, followed by a day trip to Valparaíso and Viña del Mar. The trip concludes with a flight back to Mexico City.",
+              "score": 0.670640528,
+              "taxonomies": [
+                {
+                  "taxonomy_name": "cities",
+                  "values": [
+                    "buenos aires",
+                    "santiago",
+                    "valparaíso",
+                    "viña del mar"
+                  ]
+                },
+                {
+                  "taxonomy_name": "countries",
+                  "values": [
+                    "argentina",
+                    "chile"
+                  ]
+                },
+                {
+                  "taxonomy_name": "regions",
+                  "values": [
+                    "south america"
+                  ]
+                }
+              ]
+            },
             {
               "id": "3381",
               "title": "Patagonia Infinita Buenos Aires y Calafate",
               "content": "The \"Endless Patagonia: Buenos Aires and Calafate\" package includes a trip spanning 8 days and 6 nights. The itinerary consists of flights from Mexico to Buenos Aires and Calafate, airport transfers, accommodation in both cities, a panoramic City Tour of Buenos Aires, an excursion to the Perito Moreno Glacier, travel insurance, and checked luggage allowances. Here is a summary of the main activities for each day:\n\n- Day 01: Travel from Mexico to Buenos Aires.\n- Day 02: Arrival in Buenos Aires, transfer to the hotel.\n- Day 03: Panoramic City Tour of Buenos Aires, visiting various landmarks.\n- Day 04: Free day for optional activities in Buenos Aires.\n- Day 05: Flight to Calafate, transfer to the hotel.\n- Day 06: Excursion to the Perito Moreno Glacier, exploring the park and glacier.\n- Day 07: Return to Buenos Aires from Calafate.\n- Day 08: Transfer to the airport for the return flight to Mexico City.\n\nThroughout the trip, travelers will experience the culture, history, and natural beauty of Buenos Aires and Calafate, with opportunities for exploration and relaxation.",
-              "score": 0.64561218,
+              "score": 0.670640528,
               "taxonomies": [
                 {
                   "taxonomy_name": "cities",
@@ -510,7 +536,7 @@
               "id": "3382",
               "title": "Dos Paises Por Uno Argentina y Uruguay",
               "content": "This 8-day trip to Argentina and Uruguay includes flights from Mexico to Buenos Aires and Montevideo, airport transfers, a city tour of Buenos Aires, a tango dinner show, a visit to Colonia del Sacramento, a city tour of Montevideo, an excursion to Punta del Este, and more. The itinerary involves exploring key attractions in both cities, enjoying cultural experiences, and discovering the natural beauty of the region. The trip ends with a flight back to Mexico.",
-              "score": 0.64561218,
+              "score": 0.670640528,
               "taxonomies": [
                 {
                   "taxonomy_name": "cities",
@@ -537,40 +563,10 @@
               ]
             },
             {
-              "id": "3383",
-              "title": "Tres Destinos Top",
-              "content": "This itinerary is a 9-day trip to Rio de Janeiro, Iguazú, and Buenos Aires. It includes airport transfers, guided tours, visits to iconic landmarks like Christ the Redeemer and Sugar Loaf, excursions to the Argentine and Brazilian Falls, a City Tour of Buenos Aires, and accommodation with breakfast included. The trip ends with a return flight to Mexico City.",
-              "score": 0.64561218,
-              "taxonomies": [
-                {
-                  "taxonomy_name": "cities",
-                  "values": [
-                    "buenos aires",
-                    "iguazú",
-                    "rio de janeiro"
-                  ]
-                },
-                {
-                  "taxonomy_name": "countries",
-                  "values": [
-                    "argentina",
-                    "brazil"
-                  ]
-                },
-                {
-                  "taxonomy_name": "regions",
-                  "values": [
-                    "south america",
-                    "sudamérica"
-                  ]
-                }
-              ]
-            },
-            {
               "id": "3435",
               "title": "Buenos Aires y Rio de Janeiro",
               "content": "This package includes an 8-day trip to Buenos Aires and Rio de Janeiro. It features flights from Mexico City, airport transfers, accommodation with breakfast, guided tours of both cities, a full-day tour of Rio de Janeiro with lunch, travel insurance, and a checked suitcase. The itinerary includes exploring various landmarks and neighborhoods in Buenos Aires and Rio de Janeiro. Travelers will have free time for optional activities in each city.",
-              "score": 0.64561218,
+              "score": 0.670640528,
               "taxonomies": [
                 {
                   "taxonomy_name": "cities",
@@ -587,39 +583,9 @@
                   ]
                 }
               ]
-            },
-            {
-              "id": "3380",
-              "title": "Buenos Aires y Santiago",
-              "content": "The \"Buenos Aires and Santiago\" itinerary is an 8-day/6-night trip that includes airfare from Mexico to Buenos Aires and Santiago, airport transfers, city tours in Buenos Aires and Santiago, an excursion to Viña del Mar and Valparaíso, accommodation with breakfast, and AC35 travel assistance insurance. The trip begins with 3 nights in Buenos Aires, exploring the city's main attractions and enjoying a free day. Then, travelers will fly to Santiago for 3 nights, with a city tour exploring historical and modern landmarks, followed by a day trip to Valparaíso and Viña del Mar. The trip concludes with a flight back to Mexico City.",
-              "score": 0.626410107,
-              "taxonomies": [
-                {
-                  "taxonomy_name": "cities",
-                  "values": [
-                    "buenos aires",
-                    "santiago",
-                    "valparaíso",
-                    "viña del mar"
-                  ]
-                },
-                {
-                  "taxonomy_name": "countries",
-                  "values": [
-                    "argentina",
-                    "chile"
-                  ]
-                },
-                {
-                  "taxonomy_name": "regions",
-                  "values": [
-                    "south america"
-                  ]
-                }
-              ]
             }
           ],
-          "processed_query": "cultural city breaks Argentina affordable travel Buenos Aires Cordoba Mendoza Argentine heritage tours historical landmarks local arts traditions immersive cultural experience South American urban getaways budget travel packages",
+          "processed_query": "Argentina travel affordable vacation packages South America tours Buenos Aires Iguazu Falls Patagonia cultural heritage scenic landscapes wine country Mendoza adventure travel budget friendly destinations",
           "processor_filters": {
             "duration_nights": {
               "min": null,
@@ -631,7 +597,7 @@
             },
             "starting_price": {
               "min": null,
-              "max": 4000.0
+              "max": 1300.0
             },
             "departure_dates": {
               "include": [],
@@ -664,10 +630,10 @@
       }
     },
     {
-      "tOffsetMs": 13148,
+      "tOffsetMs": 11589,
       "event": {
         "event": "done",
-        "ts": "2026-06-18T18:48:50.177267+00:00"
+        "ts": "2026-06-18T20:05:32.847254+00:00"
       }
     }
   ]
