@@ -110,6 +110,39 @@ function DetailRow({
 
 // --- payload formatting helpers ---------------------------------------------
 
+// The backend emits raw field names (direct, merged_page_ids, ...). Map the ones
+// that show up in stage payloads to plain English so the panel is readable to
+// anyone; unknown keys just get their underscores turned into spaces.
+const KEY_LABELS: Record<string, string> = {
+  direct: 'content matches',
+  taxonomy: 'taxonomy matches',
+  tax_hits: 'taxonomy hits',
+  hits: 'matches',
+  merged_page_ids: 'merged products',
+  expanded_page_ids: 'products from taxonomy',
+  page_ids: 'candidate products',
+  surviving_page_ids: 'surviving products',
+  unique_page_ids: 'unique products',
+  processed_query: 'rewritten query',
+  processor_filters: 'numeric / date filters',
+  taxonomy_filters: 'place filters',
+  taxonomy_name: 'taxonomy',
+  top_matches: 'top matches',
+  top_score: 'top score',
+  starting_price: 'starting price',
+  duration_nights: 'nights',
+  duration_days: 'days',
+  departure_dates: 'departure dates',
+  valid_until: 'valid until',
+  enriched_results: 'results',
+  ranked: 'ranked products',
+  dropped: 'dropped',
+}
+
+function labelKey(k: string): string {
+  return KEY_LABELS[k] ?? k.replace(/_/g, ' ')
+}
+
 function scalarStr(v: unknown): string {
   return typeof v === 'string' ? v : String(v)
 }
@@ -148,7 +181,7 @@ function renderLines(o: unknown, indent = 0): string[] {
         const parts = Object.entries(item as Record<string, unknown>)
           .map(([k, v]) => {
             const iv = inlineValue(v)
-            return iv !== null ? `${k}: ${iv}` : null
+            return iv !== null ? `${labelKey(k)}: ${iv}` : null
           })
           .filter((s): s is string => s !== null)
         lines.push(`${pad}- ${parts.join('  ·  ')}`)
@@ -160,9 +193,9 @@ function renderLines(o: unknown, indent = 0): string[] {
   for (const [k, v] of Object.entries(o as Record<string, unknown>)) {
     const inline = inlineValue(v)
     if (inline !== null) {
-      lines.push(`${pad}${k}: ${inline}`)
+      lines.push(`${pad}${labelKey(k)}: ${inline}`)
     } else if (v && typeof v === 'object') {
-      lines.push(`${pad}${k}:`)
+      lines.push(`${pad}${labelKey(k)}:`)
       lines.push(...renderLines(v, indent + 1))
     }
   }

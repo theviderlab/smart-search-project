@@ -12,7 +12,8 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-6 py-3">
-        <a href="#top" className="text-sm font-semibold tracking-tight text-slate-100">
+        <a href="#top" className="flex items-center gap-2 text-sm font-semibold tracking-tight text-slate-100">
+          <img src={`${import.meta.env.BASE_URL}SmartSearch.png`} alt="Smart Search logo" className="h-7 w-7 invert" />
           Smart <span className="text-blue-400">Search</span>
         </a>
 

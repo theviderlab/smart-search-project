@@ -33,6 +33,7 @@ function Node({
   w,
   title,
   sub,
+  sub2,
   stroke = '#475569',
   accent = '#e2e8f0',
   h = 44,
@@ -42,6 +43,7 @@ function Node({
   w: number
   title: string
   sub?: string
+  sub2?: string
   stroke?: string
   accent?: string
   h?: number
@@ -52,12 +54,17 @@ function Node({
       <rect x={x} y={y} width={w} height={h} rx="8" fill={BOX} stroke={stroke} />
       {sub ? (
         <>
-          <text x={cx} y={y + 18} textAnchor="middle" fill={accent} fontSize="12.5" fontWeight="600">
+          <text x={cx} y={y + (sub2 ? 16 : 18)} textAnchor="middle" fill={accent} fontSize="12.5" fontWeight="600">
             {title}
           </text>
-          <text x={cx} y={y + 33} textAnchor="middle" fill="#94a3b8" fontSize="9">
+          <text x={cx} y={y + (sub2 ? 30 : 33)} textAnchor="middle" fill="#94a3b8" fontSize="9">
             {sub}
           </text>
+          {sub2 && (
+            <text x={cx} y={y + 42} textAnchor="middle" fill="#94a3b8" fontSize="9" fontStyle="italic">
+              {sub2}
+            </text>
+          )}
         </>
       ) : (
         <text x={cx} y={y + h / 2 + 4} textAnchor="middle" fill={accent} fontSize="12.5" fontWeight="600">
@@ -87,10 +94,18 @@ const AX = 140 // content column center
 const BX = 400 // taxonomy column center
 const MX = 270 // query-flow center
 
+// Filter pairs are color-matched so you can SEE that a filter is extracted in one
+// box and applied in another. Amber = param/numeric filters (extracted first,
+// applied last). Purple = taxonomy/place filters (extracted after the merge).
+const AMBER = '#f59e0b'
+const AMBER_ACCENT = '#fcd34d'
+const TAX = '#a855f7'
+const TAX_ACCENT = '#d8b4fe'
+
 export default function SearchFlowDiagram() {
   return (
     <svg
-      viewBox="0 0 540 822"
+      viewBox="0 0 540 834"
       role="img"
       aria-label="The index is built offline by Pipeline A (content) and Pipeline B (taxonomy); at query time the Searcher enhances the query, extracts filters, runs two vector searches, merges, filters by taxonomy and params, then ranks."
       className="mx-auto w-full max-w-xl"
@@ -98,6 +113,9 @@ export default function SearchFlowDiagram() {
       <defs>
         <marker id="sfd-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse">
           <path d="M0,0 L6,3 L0,6 Z" fill={ARROW} />
+        </marker>
+        <marker id="sfd-arrow-amber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+          <path d="M0,0 L6,3 L0,6 Z" fill={AMBER} />
         </marker>
       </defs>
 
@@ -134,7 +152,20 @@ export default function SearchFlowDiagram() {
       {/* Enhance -> Extract Param Filters */}
       <Node cx={MX} y={316} w={200} title="Enhance Query" sub="LLM rewrites the query" />
       <VArrow x={MX} y1={360} y2={374} />
-      <Node cx={MX} y={374} w={200} title="Extract Param Filters" sub="LLM → price · length · dates" />
+      <Node cx={MX} y={374} w={200} stroke={AMBER} accent={AMBER_ACCENT} title="Extract Param Filters" sub="LLM → price · length · dates" />
+
+      {/* param filters are extracted here but held and applied much later (amber link) */}
+      <path
+        d="M170,396 C96,400 40,418 40,442 L40,713 C40,729 104,735 158,735"
+        fill="none"
+        stroke={AMBER}
+        strokeWidth="1.5"
+        strokeDasharray="5 4"
+        markerEnd="url(#sfd-arrow-amber)"
+      />
+      <text x="33" y="588" transform="rotate(-90 33 588)" textAnchor="middle" fill={AMBER_ACCENT} fontSize="9" fontWeight="600">
+        held, applied later
+      </text>
 
       {/* the built indexes feed the two vector searches (from above) */}
       <VArrow x={AX} y1={ROWS[3] + CBH} y2={444} dashed />
@@ -152,13 +183,13 @@ export default function SearchFlowDiagram() {
 
       <Node cx={MX} y={521} w={220} title="Merge Results" sub="union by product · highest score wins" />
       <VArrow x={MX} y1={565} y2={579} />
-      <Node cx={MX} y={581} w={220} title="Extract Taxonomy Filters" sub="LLM → places to include / exclude" />
-      <VArrow x={MX} y1={625} y2={639} />
-      <Node cx={MX} y={641} w={220} title="Filter by Taxonomy" sub="drop off-place packages" />
-      <VArrow x={MX} y1={685} y2={699} />
-      <Node cx={MX} y={701} w={220} title="Apply Param Filters" sub="drop out-of-range · SQL" />
-      <VArrow x={MX} y1={745} y2={759} />
-      <Node cx={MX} y={761} w={200} h={48} stroke="#10b981" accent="#6ee7b7" title="Rank & Format" sub="score + taxonomy tags (city · country · region)" />
+      <Node cx={MX} y={581} w={220} h={56} stroke={TAX} accent={TAX_ACCENT} title="Extract Taxonomy Filters" sub="LLM → places to include / exclude" sub2="from the merged candidates' tags" />
+      <VArrow x={MX} y1={637} y2={651} />
+      <Node cx={MX} y={653} w={220} stroke={TAX} accent={TAX_ACCENT} title="Filter by Taxonomy" sub="drop off-place packages" />
+      <VArrow x={MX} y1={697} y2={711} />
+      <Node cx={MX} y={713} w={220} stroke={AMBER} accent={AMBER_ACCENT} title="Apply Param Filters" sub="drop out-of-range · SQL" />
+      <VArrow x={MX} y1={757} y2={771} />
+      <Node cx={MX} y={773} w={200} h={48} stroke="#10b981" accent="#6ee7b7" title="Rank & Format" sub="score + taxonomy tags (city · country · region)" />
     </svg>
   )
 }

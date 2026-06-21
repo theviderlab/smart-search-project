@@ -1,5 +1,9 @@
 const FEATURES: { title: string; body: string }[] = [
   {
+    title: 'Content Pipeline',
+    body: 'End-to-end processing from URL discovery to semantic search: Finder → Parser → Summarizer → Indexer → Searcher.',
+  },
+  {
     title: 'Semantic Search',
     body: 'Vector similarity search (Pinecone + OpenAI embeddings) with automatic LLM-based query enhancement before searching.',
   },
@@ -20,12 +24,24 @@ const FEATURES: { title: string; body: string }[] = [
     body: 'Each account has its own Pinecone namespace; categories and prompts are configured independently.',
   },
   {
-    title: 'Multi-Model LLM',
-    body: 'OpenRouter allows switching LLM providers without code changes; LangChain handles orchestration.',
+    title: 'REST API (FastAPI)',
+    body: 'A complete REST API covering the whole platform — accounts, pipeline stages, taxonomies and search — so any system can integrate with it.',
   },
   {
-    title: 'Error Monitoring',
-    body: 'Sentry integration for error tracking and production alerts.',
+    title: 'Multi-Database (SQL)',
+    body: 'Native support for MySQL 8.4+ and PostgreSQL 14+ — switch engines with a single DB_DRIVER setting.',
+  },
+  {
+    title: 'E-commerce Integration',
+    body: 'Connect e-commerce systems to Smart Search. Endpoints like POST /search (semantic search, with a streaming SSE variant), /pages to ingest products, and /pipeline to run the indexing pipeline.',
+  },
+  {
+    title: 'Multi-Model LLM',
+    body: 'OpenRouter allows switching LLM providers without code changes; LangChain orchestrates embeddings, the vector store and prompts.',
+  },
+  {
+    title: 'Observability & Monitoring',
+    body: 'Every pipeline step is traced end to end with LangSmith (LLM behavior and result quality), while errors are tracked in production with Sentry alerts.',
   },
 ]
 
